@@ -1,0 +1,356 @@
+---
+import Logo from "@components/Logo.astro";
+import wavesSVG from "@assets/waves-top.svg";
+---
+
+<header>
+    <section id="waves-top">
+        <img
+            src={wavesSVG.src}
+            alt="Brand Waves Top"
+        />
+    </section>
+    <a href="/">
+        <Logo type="header" />
+    </a>
+    <a href="#" id="menu"><i class="fi fi-br-menu-burger"></i></a>
+    <nav>
+        <section class="nav-fragment">
+            <ul class="nav-list">
+                <li>
+                    <a href="/" class="nav-link">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#" class="nav-link" id="service-btn">Servicios</a>
+                    <ul id="service-menu">
+                        <li>
+                            <a href="/services/documents">
+                                Impresión de Documentos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/services/pictures">
+                                Impresión de Fotografías
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/services/marketing">
+                                Herramientas de Publicidad
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/services/design">
+                                Diseño Gráfico
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/services/miscelaneous">
+                                Otros Servicios
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="/products" class="nav-link">
+                        Productos
+                    </a>
+                </li>
+            </ul>
+            <section class="help">
+                <a href="/support/about">¿Quiénes somos?</a>
+                <a href="/support/how-to-buy">¿Cómo comprar?</a>
+                <a href="/support/contact">Contáctanos</a>
+            </section>
+        </section>
+    </nav>
+</header>
+
+<script>
+    const menu = document.getElementById("menu");
+    const nav = document.querySelector("nav");
+    const serviceBtn = document.getElementById("service-btn");
+    const serviceMenu = document.getElementById("service-menu");
+
+    const closeServiceList = (e) => {
+        if (!e.target.matches("#service-btn")) {
+            serviceMenu.classList.remove("open");
+        }
+    };
+
+    menu.addEventListener("click", () => {
+        nav.classList.toggle("open");
+    });
+
+    nav.addEventListener("click", (e) => {
+        if (nav.classList.contains("open") && !e.target.matches("nav")) {
+            return;
+        }
+
+        nav.classList.remove("open");
+    });
+
+    serviceBtn.addEventListener("click", () => {
+        serviceMenu.classList.toggle("open");
+    });
+
+    document.addEventListener("click", closeServiceList);
+
+    document.addEventListener("mouseover", (e) => {
+        if (!e.target.matches("#service-menu li a")) {
+            closeServiceList(e);
+        }
+    });
+</script>
+
+<style>
+    /* Mobile-first Layout */
+
+    header {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+
+        position: relative;
+
+        background-color: var(--main-background-color);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-inline: 1rem;
+
+        & > *:not(#waves-top) {
+            z-index: 1;
+        }
+
+        & a {
+            display: block;
+        }
+    }
+
+    #waves-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        overflow: hidden;
+    }
+
+    #menu {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: -100vw;
+
+        width: 100vw;
+        height: 100vh;
+
+        transition:
+            visibility 200ms ease,
+            transform 275ms linear;
+
+        &.open {
+            visibility: visible;
+            transform: translateX(-100vw);
+
+            & .nav-fragment {
+                box-shadow: 0 0 0 100vmax var(--shadow-background-color);
+            }
+        }
+
+        & .nav-fragment {
+            float: right;
+
+            width: fit-content;
+            max-width: 50%;
+            height: 100%;
+
+            padding-top: 4rem;
+
+            background-color: var(--main-background-color);
+            box-shadow: 0 0 0 0 transparent;
+            transition: box-shadow 250ms linear;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            & ul li {
+                list-style: none;
+            }
+
+            & .nav-list {
+                width: 100%;
+
+                & li {
+                    position: relative;
+
+                    &:nth-child(1) .nav-link:hover {
+                        background: linear-gradient(
+                            var(--home-gradient1-color),
+                            var(--home-gradient2-color),
+                            var(--home-gradient3-color)
+                        );
+                    }
+
+                    &:nth-child(2) .nav-link:hover {
+                        background: linear-gradient(
+                            var(--services-gradient1-color),
+                            var(--services-gradient2-color),
+                            var(--services-gradient3-color)
+                        );
+                    }
+
+                    &:nth-child(3) .nav-link:hover {
+                        background: linear-gradient(
+                            var(--products-gradient1-color),
+                            var(--products-gradient2-color),
+                            var(--products-gradient3-color)
+                        );
+                    }
+
+                    & .nav-link {
+                        font-weight: 600;
+
+                        text-shadow: 1px 1px 3px var(--link-shadow-color);
+
+                        padding: 0.75rem 2.5rem;
+                        transition: background-color ease-in-out 200ms;
+                    }
+
+                    & #service-menu {
+                        overflow: hidden;
+                        height: 0;
+
+                        &.open {
+                            height: auto;
+                        }
+
+                        & li {
+                            width: auto;
+
+                            & a {
+                                display: block;
+                                padding: 0.75rem 3rem;
+
+                                font-size: 0.85rem;
+                                font-weight: 500;
+
+                                border-left: 3px solid transparent;
+
+                                &:hover {
+                                    border-left: 3px solid white;
+                                    background-color: #7777;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            & .help {
+                padding-block: 1rem;
+
+                background-color: #5557;
+
+                & a {
+                    display: block;
+                    padding: 0.75rem 2rem;
+
+                    &:hover {
+                        color: var(--link-help-hover-color);
+                    }
+                }
+            }
+        }
+    }
+
+    /* Larger Screens Adaptations */
+
+    @media (767px < width) {
+        header {
+            padding-right: 0;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        nav,
+        nav.open {
+            visibility: visible;
+            position: static;
+
+            width: fit-content;
+            height: auto;
+
+            transform: none;
+            transition: none;
+
+            & .nav-fragment {
+                float: none;
+
+                width: fit-content;
+                max-width: none;
+                height: 100%;
+
+                padding-top: 0;
+
+                background-color: transparent;
+                box-shadow: 0 0 0 transparent;
+
+                flex-direction: row;
+
+                & .nav-list {
+                    width: 100%;
+
+                    display: flex;
+                    align-items: stretch;
+
+                    & li {
+                        & .nav-link {
+                            padding: 1.7rem 2rem;
+                            align-self: stretch;
+                        }
+
+                        & #service-menu {
+                            position: absolute;
+
+                            background-color: var(--main-background-color);
+
+                            & li {
+                                width: auto;
+                                list-style: none;
+
+                                & a {
+                                    border-left: none;
+                                    text-align: center;
+
+                                    display: block;
+                                    padding: 1rem;
+
+                                    &:hover {
+                                        border-left: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .help {
+                    display: none;
+                }
+            }
+        }
+    }
+</style>

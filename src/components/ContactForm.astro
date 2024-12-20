@@ -1,0 +1,111 @@
+---
+const { title, callToAction, action, method } = Astro.props;
+---
+
+<form action={action} method={method}>
+    <h2>{title}</h2>
+
+    <label
+        >Nombre y Apellido*
+        <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Juan Raimilla"
+            autofocus
+            required
+        />
+    </label>
+    <label
+        >Número de Teléfono*
+        <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="(+56)957549680"
+            pattern="^(\+?56){0,1}(9)[98765]\d{7}$"
+            required
+        />
+    </label>
+    <label
+        >Correo Electrónico
+        <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="juanraimilla@gmail.com"
+            pattern="[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+        />
+    </label>
+    <label
+        >Mensaje
+        <textarea name="message" id="message"></textarea>
+    </label>
+
+    <button class="action base">{callToAction}</button>
+</form>
+
+<style>
+    form {
+        width: 100%;
+
+        padding: 2rem 1.5rem;
+
+        background-color: var(--form-background-color);
+
+        border-radius: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+
+        gap: 2rem;
+
+        & label,
+        & input,
+        & textarea {
+            display: block;
+        }
+
+        & input,
+        & textarea,
+        & button {
+            font-size: large;
+            width: 100%;
+            max-width: 20rem;
+        }
+
+        & label {
+            font-size: small;
+
+            & input,
+            & textarea {
+                color: var(--text-on-color);
+                background-color: var(--input-background-color);
+
+                border-radius: 0.25rem;
+                border: 1px solid transparent;
+
+                padding: 0.25rem;
+
+                &:focus {
+                    border-color: white;
+                }
+            }
+
+            & input {
+                margin-top: 0.2rem;
+            }
+
+            & textarea {
+                height: 10rem;
+
+                font-family: system-ui, sans-serif;
+            }
+        }
+
+        & button {
+            margin-top: 1rem;
+        }
+    }
+</style>

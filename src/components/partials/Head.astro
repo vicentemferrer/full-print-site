@@ -1,0 +1,32 @@
+---
+const { title, subtitle } = Astro.props;
+---
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{`${title}${subtitle ? ` | ${subtitle}` : ``}`}</title>
+    <meta name="description" content="Full Print Website" />
+    <meta name="author" content="Vicente Ferrer" />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta property="og:title" content="Full Print, tu lugar de impresión" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+
+    <link
+        rel="icon"
+        type="image/webp"
+        href="/images/favicon.webp"
+    />
+
+    <link
+        rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.3.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css"
+    />
+</head>

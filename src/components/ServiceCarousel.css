@@ -1,0 +1,48 @@
+.carousel {
+    grid-column: 2 / 3;
+    justify-self: center;
+
+    margin-block: 1rem;
+}
+
+.carousel-arrow {
+    --gradient-slope: 0deg;
+
+    border-radius: 0;
+
+    background-color: none;
+    background: linear-gradient(var(--gradient-slope), var(--carousel-gradient1-color), var(--carousel-gradient2-color));
+
+    width: 2rem;
+    height: 100%;
+
+    &.carousel-prev {
+        --gradient-slope: 90deg
+    }
+
+    &.carousel-next {
+        --gradient-slope: -90deg
+    }
+
+    & i {
+        color: grey;
+    }
+
+    &:hover i {
+        color: var(--link-color);
+    }
+}
+
+@media (1023px < width) {
+    .carousel-track {
+        width: 100%;
+
+        justify-content: space-around;
+
+        padding-inline: 0;
+    }
+
+    .carousel-arrow {
+        display: none;
+    }
+}

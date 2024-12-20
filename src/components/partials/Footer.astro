@@ -1,0 +1,387 @@
+---
+import Logo from "@components/Logo.astro";
+import FooterLink from "@components/FooterLink.astro";
+
+import wavesSVG from "@assets/waves-bottom.svg";
+
+const currentYear = new Date().getFullYear().toString();
+
+const servicesList = [
+    {
+        icon: {
+            itHas: false,
+        },
+        url: "services/documents",
+        content: "Impresión de Documentos",
+    },
+    {
+        icon: {
+            itHas: false,
+        },
+        url: "services/pictures",
+        content: "Impresión de Imágenes",
+    },
+    {
+        icon: {
+            itHas: false,
+        },
+        url: "services/marketing",
+        content: "Herramientas de Publicidad",
+    },
+    {
+        icon: {
+            itHas: false,
+        },
+        url: "services/design",
+        content: "Diseño Gráfico",
+    },
+    {
+        icon: {
+            itHas: false,
+        },
+        url: "services/miscelaneous",
+        content: "Otros Servicios",
+    },
+];
+
+const helpList = [
+    {
+        icon: {
+            itHas: false,
+        },
+        url: "support/about",
+        content: "¿Quiénes somos?",
+    },
+    {
+        icon: {
+            itHas: false,
+        },
+        url: "support/how-to-buy",
+        content: "¿Cómo comprar?",
+    },
+    {
+        icon: {
+            itHas: false,
+        },
+        url: "support/contact",
+        content: "Contáctanos",
+    },
+];
+
+const contactList = [
+    {
+        icon: {
+            itHas: true,
+            variant: "br",
+            suffix: "phone-call",
+        },
+        url: "tel:56950443336",
+        content: "+569 5044 3336",
+    },
+    {
+        icon: {
+            itHas: true,
+            variant: "br",
+            suffix: "envelope",
+        },
+        url: "mailto:fullprint.chiloe@gmail.com",
+        content: "fullprint.chiloe@gmail.com",
+    },
+    {
+        icon: {
+            itHas: true,
+            variant: "br",
+            suffix: "marker",
+        },
+        url: "https://maps.app.goo.gl/E2bgyVkRNTVgx9eK6",
+        content: "Chacabuco 797, Ancud",
+    },
+];
+
+const socialList = [
+    {
+        icon: {
+            itHas: true,
+            variant: "brands",
+            suffix: "facebook",
+        },
+        url: "https://www.facebook.com/fullprint.chiloe/",
+    },
+    {
+        icon: {
+            itHas: true,
+            variant: "brands",
+            suffix: "instagram",
+        },
+        url: "https://www.instagram.com/fullprint.chiloe/",
+    },
+    {
+        icon: {
+            itHas: true,
+            variant: "brands",
+            suffix: "whatsapp",
+        },
+        url: "https://wa.me/56950443336",
+    },
+];
+---
+
+<footer>
+    <section id="waves-bottom">
+        <img
+            src={wavesSVG.src}
+            alt="Brand Waves Bottom"
+        />
+    </section>
+    <section class="row info">
+        <article>
+            <Logo type="footer" />
+        </article>
+        <article class="xtra-nav">
+            <h4>Servicios</h4>
+            <ul>
+                {
+                    servicesList.map(({ icon, url, content }) => (
+                        <li>
+                            <FooterLink
+                                icon={icon}
+                                url={`/full-print-web/${url}`}
+                            >
+                                {content}
+                            </FooterLink>
+                        </li>
+                    ))
+                }
+            </ul>
+        </article>
+        <article class="about">
+            <h4>Información</h4>
+            <ul>
+                {
+                    helpList.map(({ icon, url, content }) => (
+                        <li>
+                            <FooterLink
+                                icon={icon}
+                                url={`/${url}`}
+                            >
+                                {content}
+                            </FooterLink>
+                        </li>
+                    ))
+                }
+            </ul>
+        </article>
+        <article class="contact">
+            <h4>Contacto</h4>
+            <address>
+                <ul>
+                    {
+                        contactList.map(({ icon, url, content }) => (
+                            <li>
+                                <FooterLink icon={icon} url={url}>
+                                    {` ${content}`}
+                                </FooterLink>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </address>
+        </article>
+    </section>
+    <section class="row credits">
+        <article class="text-badge">
+            <p>
+                <i class="fi fi-br-copyright"></i>{currentYear} Full Print | Desarrollado
+                por Vicente Ferrer
+            </p>
+        </article>
+        <article class="social text-badge">
+            {
+                socialList.map(({ icon, url }) => (
+                    <FooterLink icon={icon} url={url} />
+                ))
+            }
+        </article>
+    </section>
+</footer>
+
+<style>
+    /* Mobile-first Layout */
+
+    footer {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+
+        position: relative;
+
+        background-color: var(--main-background-color);
+
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+
+        & .row {
+            grid-column: 2 / 3;
+
+            z-index: 0;
+
+            &.info {
+                grid-row: 1 / 2;
+
+                display: none;
+            }
+
+            &.credits {
+                grid-row: 2 / 3;
+
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: space-between;
+                align-items: center;
+
+                gap: 1rem;
+
+                padding-block: 1rem;
+
+                & article:not(.social) {
+                    & p {
+                        & i {
+                            font-size: 0.8rem;
+                            margin-right: 0.1rem;
+                        }
+                    }
+                }
+
+                & .social {
+                    width: 40vw;
+
+                    gap: 1rem;
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    #waves-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    /* Larger Screens Adaptations */
+
+    @media (767px < width) {
+        footer {
+            & .row {
+                &.info {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    justify-items: center;
+                    align-items: self-start;
+
+                    grid-auto-flow: column;
+                    grid-auto-columns: 1fr;
+
+                    padding-block: 1rem;
+
+                    & ul li {
+                        list-style: none;
+                        margin-block: 0.1rem;
+                    }
+
+                    & .xtra-nav {
+                        display: none;
+                    }
+
+                    & .contact {
+                        & address {
+                            font-style: normal;
+                        }
+                    }
+
+                    & article {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
+                    }
+                }
+
+                &.credits {
+                    flex-direction: row;
+
+                    padding-inline: 3vw;
+
+                    & .social {
+                        width: 18vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (1023px < width) {
+        footer {
+            & .row {
+                &.info {
+                    & .xtra-nav {
+                        display: flex;
+                    }
+                }
+
+                &.credits {
+                    padding-inline: 5vw;
+
+                    & .social {
+                        width: 13vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (1247px < width) {
+        footer {
+            & .row {
+                &.credits {
+                    & .social {
+                        width: 10vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (1439px < width) {
+        footer {
+            & .row {
+                &.credits {
+                    padding-inline: 6vw;
+                }
+            }
+        }
+    }
+
+    @media (2559px < width) {
+        footer {
+            & .row {
+                &.credits {
+                    padding-inline: 8vw;
+
+                    & .social {
+                        width: 7vw;
+                    }
+                }
+            }
+        }
+    }
+</style>

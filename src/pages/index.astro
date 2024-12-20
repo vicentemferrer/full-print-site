@@ -1,11 +1,46 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+//import type { ServiceLink } from "../data/types";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "@layouts/Layout.astro";
+
+import Hero from "@components/Hero.astro";
+// import ServiceCarousel from "@components/ServiceCarousel.tsx";
+
+// const servicesLinks: ServiceLink[] = [
+// 	{
+// 		icon: "document",
+// 		title: "Impresión de Documentos",
+// 		url: "services/documents",
+// 	},
+// 	{
+// 		icon: "picture",
+// 		title: "Impresión de Imágenes",
+// 		url: "services/pictures",
+// 	},
+// 	{
+// 		icon: "lightbulb-on",
+// 		title: "Herramientas de Publicidad",
+// 		url: "services/marketing",
+// 	},
+// 	{
+// 		icon: "customize-edit",
+// 		title: "Diseño Gráfico",
+// 		url: "services/design",
+// 	},
+// 	{
+// 		icon: "square-plus",
+// 		title: "Otros Servicios",
+// 		url: "services/miscelaneous",
+// 	},
+// ];
 ---
 
-<Layout>
-	<Welcome />
+<Layout subtitle="Inicio">
+	<main>
+		<Hero />
+
+		<!-- <ServiceCarousel anchors={servicesLinks} client:visible /> -->
+	</main>
 </Layout>
+
+<style></style>
