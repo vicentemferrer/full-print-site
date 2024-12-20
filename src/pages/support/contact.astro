@@ -1,0 +1,113 @@
+---
+import Layout from "@layouts/Layout.astro";
+import ContactForm from "@components/ContactForm.astro";
+---
+
+<Layout subtitle="Contáctanos">
+    <main>
+        <section>
+            <ContactForm
+                title="Envíenos Su Consulta"
+                callToAction="Enviar Mi Consulta"
+                action="/full-print-web/"
+                method="post"
+            />
+        </section>
+        <section>
+            <div class="contact-fragment">
+                <p>También puede encontrarnos en nuestro local</p>
+                <p>
+                    Estamos abiertos de <span>09:00 a 18:30</span> (horario continuado)
+                </p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.0657647172593!2d-73.82801959999999!3d-41.8699315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96228d0484de23d5%3A0xa75e56e48487b9ed!2sFULL%20PRINT!5e0!3m2!1ses-419!2scl!4v1717510163519!5m2!1ses-419!2scl"
+                    width="200"
+                    height="150"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <hr />
+                <p>
+                    Si necesita solicitar nuestro servicio de forma inmediata
+                    puede
+                </p>
+                <a
+                    href="https://wa.me/56950443336"
+                    target="_blank"
+                    class="action secondary"
+                    ><i class="fi fi-brands-whatsapp"></i>Contactarnos por
+                    WhatsApp</a
+                >
+            </div>
+        </section>
+    </main>
+</Layout>
+
+<style>
+    section {
+        grid-column: 2 / 3;
+
+        width: 100%;
+
+        padding: 1rem 0.5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-fragment {
+        width: 100%;
+
+        padding: 2rem 1.5rem;
+
+        border-radius: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 2rem;
+
+        & iframe,
+        & hr,
+        & p {
+            width: 100%;
+            max-width: 20rem;
+        }
+
+        & iframe {
+            border: 0;
+            border-radius: 1rem;
+        }
+
+        & hr {
+            margin-block: 1rem;
+        }
+
+        & p {
+            font-size: large;
+
+            text-align: center;
+
+            & span {
+                display: block;
+
+                font-weight: 800;
+            }
+        }
+    }
+
+    @media (767px < width) {
+        main {
+            grid-template-columns: auto 1fr 1fr auto;
+        }
+
+        section {
+            padding: 2rem;
+
+            &:last-child {
+                grid-column: 3 / 4;
+            }
+        }
+    }
+</style>
