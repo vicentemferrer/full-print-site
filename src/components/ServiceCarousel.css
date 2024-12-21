@@ -33,7 +33,7 @@
   }
 }
 
-@media (1023px < width) {
+@media (min-width: 1024px) {
   .carousel-track {
     width: 100%;
 

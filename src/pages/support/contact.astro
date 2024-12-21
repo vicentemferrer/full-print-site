@@ -6,12 +6,7 @@ import ContactForm from '@components/ContactForm.astro';
 <Layout subtitle='Contáctanos'>
   <main>
     <section>
-      <ContactForm
-        title='Envíenos Su Consulta'
-        callToAction='Enviar Mi Consulta'
-        action='/full-print-web/'
-        method='post'
-      />
+      <ContactForm title='Envíenos Su Consulta' callToAction='Enviar Mi Consulta' action='/' method='post' />
     </section>
     <section>
       <div class='contact-fragment'>
@@ -90,7 +85,7 @@ import ContactForm from '@components/ContactForm.astro';
     }
   }
 
-  @media (767px < width) {
+  @media (min-width: 768px) {
     main {
       grid-template-columns: auto 1fr 1fr auto;
     }

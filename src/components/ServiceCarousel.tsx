@@ -1,4 +1,4 @@
-import type { ServiceLink } from '../data/types.ts';
+import type { ServiceLink } from '@devTypes/ServiceLink.ts';
 
 import Carousel from '@components/carousel/Carousel.tsx';
 import ServiceCard from '@components/ServiceCard.tsx';

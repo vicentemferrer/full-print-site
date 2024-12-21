@@ -1,4 +1,4 @@
-import type { ServiceLink } from '../data/types';
+import type { ServiceLink } from '@devTypes/ServiceLink.ts';
 
 import './ServiceCard.css';
 
@@ -6,7 +6,7 @@ function ServiceCard({ props }: { props: ServiceLink }) {
   const { icon, title, url } = props;
 
   return (
-    <a href={`/full-print-web/${url}`}>
+    <a href={`/${url}`}>
       <article className='service-card'>
         <i className={`fi fi-br-${icon}`}></i>
         <h3>{title}</h3>

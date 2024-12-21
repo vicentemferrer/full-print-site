@@ -38,7 +38,7 @@ const { icon, url } = Astro.props;
     }
   }
 
-  @media (767px < width) {
+  @media (min-width: 768px) {
     .social-link {
       & i {
         font-size: 1.1rem;
@@ -46,7 +46,7 @@ const { icon, url } = Astro.props;
     }
   }
 
-  @media (1023px < width) {
+  @media (min-width: 1024px) {
     .social-link {
       & i {
         font-size: 1.25rem;

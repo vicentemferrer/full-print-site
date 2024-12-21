@@ -1,45 +1,45 @@
 ---
-//import type { ServiceLink } from "../data/types";
+import type { ServiceLink } from '@devTypes/ServiceLink.ts';
 
 import Layout from '@layouts/Layout.astro';
 
 import Hero from '@components/Hero.astro';
-// import ServiceCarousel from "@components/ServiceCarousel.tsx";
+import ServiceCarousel from '@components/ServiceCarousel.tsx';
 
-// const servicesLinks: ServiceLink[] = [
-// 	{
-// 		icon: "document",
-// 		title: "Impresión de Documentos",
-// 		url: "services/documents",
-// 	},
-// 	{
-// 		icon: "picture",
-// 		title: "Impresión de Imágenes",
-// 		url: "services/pictures",
-// 	},
-// 	{
-// 		icon: "lightbulb-on",
-// 		title: "Herramientas de Publicidad",
-// 		url: "services/marketing",
-// 	},
-// 	{
-// 		icon: "customize-edit",
-// 		title: "Diseño Gráfico",
-// 		url: "services/design",
-// 	},
-// 	{
-// 		icon: "square-plus",
-// 		title: "Otros Servicios",
-// 		url: "services/miscelaneous",
-// 	},
-// ];
+const servicesLinks: ServiceLink[] = [
+  {
+    icon: 'document',
+    title: 'Impresión de Documentos',
+    url: 'services/documents'
+  },
+  {
+    icon: 'picture',
+    title: 'Impresión de Imágenes',
+    url: 'services/pictures'
+  },
+  {
+    icon: 'lightbulb-on',
+    title: 'Herramientas de Publicidad',
+    url: 'services/marketing'
+  },
+  {
+    icon: 'customize-edit',
+    title: 'Diseño Gráfico',
+    url: 'services/design'
+  },
+  {
+    icon: 'square-plus',
+    title: 'Otros Servicios',
+    url: 'services/miscelaneous'
+  }
+];
 ---
 
 <Layout subtitle='Inicio'>
   <main>
     <Hero />
 
-    <!-- <ServiceCarousel anchors={servicesLinks} client:visible /> -->
+    <ServiceCarousel anchors={servicesLinks} client:visible />
   </main>
 </Layout>
 
