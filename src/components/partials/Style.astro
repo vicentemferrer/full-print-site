@@ -1,258 +1,258 @@
 <style is:global>
-    :root {
-        /* Full Print Color Palette */
-        --dark-primary-color: #262626;
-        --dark-accent-color: #130c0d;
-        --dark-shadow-color: #130c0d7f;
+  :root {
+    /* Full Print Color Palette */
+    --dark-primary-color: #262626;
+    --dark-accent-color: #130c0d;
+    --dark-shadow-color: #130c0d7f;
 
-        --accent1-light-color: #df5ca5;
-        --accent1-main-color: #dd258c;
-        --accent1-dark-color: #ac1e6e;
-        --accent2-light-color: #ffec89;
-        --accent2-main-color: #fff016;
-        --accent2-dark-color: #d7ad23;
-        --accent3-light-color: #53c2df;
-        --accent3-main-color: #20a2c4;
-        --accent3-dark-color: #065569;
+    --accent1-light-color: #df5ca5;
+    --accent1-main-color: #dd258c;
+    --accent1-dark-color: #ac1e6e;
+    --accent2-light-color: #ffec89;
+    --accent2-main-color: #fff016;
+    --accent2-dark-color: #d7ad23;
+    --accent3-light-color: #53c2df;
+    --accent3-main-color: #20a2c4;
+    --accent3-dark-color: #065569;
 
-        --accent4-gold1-color: rgba(255, 212, 0, 1);
-        --accent4-gold2-color: rgba(239, 175, 0, 1);
-        --accent4-gold3-color: rgba(223, 150, 0, 1);
+    --accent4-gold1-color: rgba(255, 212, 0, 1);
+    --accent4-gold2-color: rgba(239, 175, 0, 1);
+    --accent4-gold3-color: rgba(223, 150, 0, 1);
 
-        --text-on-color: white;
+    --text-on-color: white;
 
-        /* Backgrounds */
-        --main-background-color: var(--dark-primary-color);
-        --shadow-background-color: var(--dark-shadow-color);
-        --social-background-color: var(--dark-primary-color);
+    /* Backgrounds */
+    --main-background-color: var(--dark-primary-color);
+    --shadow-background-color: var(--dark-shadow-color);
+    --social-background-color: var(--dark-primary-color);
 
-        --form-background-color: var(--dark-primary-color);
-        --input-background-color: var(--dark-accent-color);
+    --form-background-color: var(--dark-primary-color);
+    --input-background-color: var(--dark-accent-color);
 
-        /* Links & Buttons */
-        --link-color: var(--text-on-color);
-        --button-hover-color: transparent;
+    /* Links & Buttons */
+    --link-color: var(--text-on-color);
+    --button-hover-color: transparent;
 
-        --link-fb-hover-color: steelblue;
-        --link-ig-hover-color: #dd2a7b;
-        --link-wp-hover-color: #25d366;
+    --link-fb-hover-color: steelblue;
+    --link-ig-hover-color: #dd2a7b;
+    --link-wp-hover-color: #25d366;
 
-        --link-ft-hover-color: var(--accent1-main-color);
-        --link-help-hover-color: var(--accent1-main-color);
+    --link-ft-hover-color: var(--accent1-main-color);
+    --link-help-hover-color: var(--accent1-main-color);
 
-        --link-shadow-color: var(--dark-accent-color);
+    --link-shadow-color: var(--dark-accent-color);
 
-        /* Nav links Gradients */
-        --home-gradient1-color: var(--accent2-dark-color);
-        --home-gradient2-color: var(--accent2-main-color);
-        --home-gradient3-color: var(--accent2-light-color);
+    /* Nav links Gradients */
+    --home-gradient1-color: var(--accent2-dark-color);
+    --home-gradient2-color: var(--accent2-main-color);
+    --home-gradient3-color: var(--accent2-light-color);
 
-        --services-gradient1-color: var(--accent3-dark-color);
-        --services-gradient2-color: var(--accent3-main-color);
-        --services-gradient3-color: var(--accent3-light-color);
+    --services-gradient1-color: var(--accent3-dark-color);
+    --services-gradient2-color: var(--accent3-main-color);
+    --services-gradient3-color: var(--accent3-light-color);
 
-        --products-gradient1-color: var(--accent1-dark-color);
-        --products-gradient2-color: var(--accent1-main-color);
-        --products-gradient3-color: var(--accent1-light-color);
+    --products-gradient1-color: var(--accent1-dark-color);
+    --products-gradient2-color: var(--accent1-main-color);
+    --products-gradient3-color: var(--accent1-light-color);
 
-        /* Button Gradients */
-        --premium-gradient1-color: var(--accent4-gold3-color);
-        --premium-gradient2-color: var(--accent4-gold2-color);
-        --premium-gradient3-color: var(--accent4-gold1-color);
+    /* Button Gradients */
+    --premium-gradient1-color: var(--accent4-gold3-color);
+    --premium-gradient2-color: var(--accent4-gold2-color);
+    --premium-gradient3-color: var(--accent4-gold1-color);
 
-        --dark-gradient1-color: var(--dark-accent-color);
-        --dark-gradient2-color: var(--dark-primary-color);
+    --dark-gradient1-color: var(--dark-accent-color);
+    --dark-gradient2-color: var(--dark-primary-color);
 
-        --base-gradient1-color: var(--accent1-dark-color);
-        --base-gradient2-color: var(--accent1-main-color);
-        --base-gradient3-color: var(--accent1-light-color);
+    --base-gradient1-color: var(--accent1-dark-color);
+    --base-gradient2-color: var(--accent1-main-color);
+    --base-gradient3-color: var(--accent1-light-color);
 
-        --secondary-gradient1-color: var(--accent3-dark-color);
-        --secondary-gradient2-color: var(--accent3-light-color);
+    --secondary-gradient1-color: var(--accent3-dark-color);
+    --secondary-gradient2-color: var(--accent3-light-color);
 
-        /* Carousel Arrows Gradients */
-        --carousel-gradient1-color: var(--dark-accent-color);
-        --carousel-gradient2-color: transparent;
+    /* Carousel Arrows Gradients */
+    --carousel-gradient1-color: var(--dark-accent-color);
+    --carousel-gradient2-color: transparent;
+  }
+
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+    background-size: 224px;
+  }
+
+  body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+    color: var(--text-on-color);
+  }
+
+  header,
+  main,
+  footer {
+    width: 100%;
+  }
+
+  main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  .action {
+    font-weight: 500;
+
+    text-align: center;
+    text-decoration: none;
+
+    padding: 1rem 2rem;
+
+    border: 2px solid transparent;
+    border-radius: 5rem;
+
+    color: var(--link-color);
+
+    &:hover {
+      color: var(--button-hover-color);
     }
 
-    *,
-    *::before,
-    *::after {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
+    &.premium {
+      color: var(--button-hover-color);
+
+      background:
+        linear-gradient(
+            var(--dark-gradient1-color),
+            var(--dark-gradient2-color)
+          )
+          text,
+        radial-gradient(
+            circle at left,
+            var(--premium-gradient1-color) 17%,
+            var(--premium-gradient2-color) 60%,
+            var(--premium-gradient3-color) 90%
+          )
+          padding-box;
+
+      &:hover {
+        background:
+          radial-gradient(
+              circle at left,
+              var(--premium-gradient1-color) 17%,
+              var(--premium-gradient2-color) 60%,
+              var(--premium-gradient3-color) 90%
+            )
+            text,
+          linear-gradient(
+              var(--dark-gradient1-color),
+              var(--dark-gradient2-color)
+            )
+            padding-box,
+          radial-gradient(
+              circle at left,
+              var(--premium-gradient1-color) 17%,
+              var(--premium-gradient2-color) 60%,
+              var(--premium-gradient3-color) 90%
+            )
+            border-box;
+      }
     }
 
-    html {
-        font-family: system-ui, sans-serif;
-        background: #13151a;
-        background-size: 224px;
+    &.base {
+      background: radial-gradient(
+          circle at left,
+          var(--base-gradient1-color) 17%,
+          var(--base-gradient2-color) 60%,
+          var(--base-gradient3-color) 90%
+        )
+        padding-box;
+
+      &:hover {
+        background:
+          radial-gradient(
+              circle at left,
+              var(--base-gradient1-color) 17%,
+              var(--base-gradient2-color) 60%,
+              var(--base-gradient3-color) 90%
+            )
+            text,
+          linear-gradient(
+              var(--dark-gradient1-color),
+              var(--dark-gradient2-color)
+            )
+            padding-box,
+          radial-gradient(
+              circle at left,
+              var(--base-gradient1-color) 17%,
+              var(--base-gradient2-color) 60%,
+              var(--base-gradient3-color) 90%
+            )
+            border-box;
+      }
     }
 
-    body {
-        width: 100%;
-        display: grid;
-        grid-template-columns: auto 1fr auto;
+    &.secondary {
+      background:
+        linear-gradient(
+            var(--dark-gradient1-color),
+            var(--dark-gradient2-color)
+          )
+          padding-box,
+        linear-gradient(
+            var(--secondary-gradient1-color),
+            var(--secondary-gradient2-color)
+          )
+          border-box;
 
-        color: var(--text-on-color);
+      &:hover {
+        background:
+          linear-gradient(
+              var(--secondary-gradient1-color),
+              var(--secondary-gradient2-color)
+            )
+            text,
+          linear-gradient(
+              var(--dark-gradient1-color),
+              var(--dark-gradient2-color)
+            )
+            padding-box,
+          linear-gradient(
+              var(--secondary-gradient1-color),
+              var(--secondary-gradient2-color)
+            )
+            border-box;
+      }
     }
 
-    header,
-    main,
-    footer {
-        width: 100%;
+    & i {
+      font-size: small;
+      margin-right: 0.25rem;
     }
+  }
 
-    main {
-        grid-column: 2 / 3;
-        grid-row: 2 / 3;
+  @media (767px < width) {
+    .text-badge {
+      padding: 0.5rem 1rem;
 
-        display: grid;
-        grid-template-columns: auto 1fr auto;
+      background-color: var(--social-background-color);
+      border: 1px solid white;
+      border-radius: 2rem;
     }
-
-    a {
-        color: var(--link-color);
-        text-decoration: none;
-    }
-
-    .action {
-        font-weight: 500;
-
-        text-align: center;
-        text-decoration: none;
-
-        padding: 1rem 2rem;
-
-        border: 2px solid transparent;
-        border-radius: 5rem;
-
-        color: var(--link-color);
-
-        &:hover {
-            color: var(--button-hover-color);
-        }
-
-        &.premium {
-            color: var(--button-hover-color);
-
-            background:
-                linear-gradient(
-                        var(--dark-gradient1-color),
-                        var(--dark-gradient2-color)
-                    )
-                    text,
-                radial-gradient(
-                        circle at left,
-                        var(--premium-gradient1-color) 17%,
-                        var(--premium-gradient2-color) 60%,
-                        var(--premium-gradient3-color) 90%
-                    )
-                    padding-box;
-
-            &:hover {
-                background:
-                    radial-gradient(
-                            circle at left,
-                            var(--premium-gradient1-color) 17%,
-                            var(--premium-gradient2-color) 60%,
-                            var(--premium-gradient3-color) 90%
-                        )
-                        text,
-                    linear-gradient(
-                            var(--dark-gradient1-color),
-                            var(--dark-gradient2-color)
-                        )
-                        padding-box,
-                    radial-gradient(
-                            circle at left,
-                            var(--premium-gradient1-color) 17%,
-                            var(--premium-gradient2-color) 60%,
-                            var(--premium-gradient3-color) 90%
-                        )
-                        border-box;
-            }
-        }
-
-        &.base {
-            background: radial-gradient(
-                    circle at left,
-                    var(--base-gradient1-color) 17%,
-                    var(--base-gradient2-color) 60%,
-                    var(--base-gradient3-color) 90%
-                )
-                padding-box;
-
-            &:hover {
-                background:
-                    radial-gradient(
-                            circle at left,
-                            var(--base-gradient1-color) 17%,
-                            var(--base-gradient2-color) 60%,
-                            var(--base-gradient3-color) 90%
-                        )
-                        text,
-                    linear-gradient(
-                            var(--dark-gradient1-color),
-                            var(--dark-gradient2-color)
-                        )
-                        padding-box,
-                    radial-gradient(
-                            circle at left,
-                            var(--base-gradient1-color) 17%,
-                            var(--base-gradient2-color) 60%,
-                            var(--base-gradient3-color) 90%
-                        )
-                        border-box;
-            }
-        }
-
-        &.secondary {
-            background:
-                linear-gradient(
-                        var(--dark-gradient1-color),
-                        var(--dark-gradient2-color)
-                    )
-                    padding-box,
-                linear-gradient(
-                        var(--secondary-gradient1-color),
-                        var(--secondary-gradient2-color)
-                    )
-                    border-box;
-
-            &:hover {
-                background:
-                    linear-gradient(
-                            var(--secondary-gradient1-color),
-                            var(--secondary-gradient2-color)
-                        )
-                        text,
-                    linear-gradient(
-                            var(--dark-gradient1-color),
-                            var(--dark-gradient2-color)
-                        )
-                        padding-box,
-                    linear-gradient(
-                            var(--secondary-gradient1-color),
-                            var(--secondary-gradient2-color)
-                        )
-                        border-box;
-            }
-        }
-
-        & i {
-            font-size: small;
-            margin-right: 0.25rem;
-        }
-    }
-
-    @media (767px < width) {
-        .text-badge {
-            padding: 0.5rem 1rem;
-
-            background-color: var(--social-background-color);
-            border: 1px solid white;
-            border-radius: 2rem;
-        }
-    }
+  }
 </style>

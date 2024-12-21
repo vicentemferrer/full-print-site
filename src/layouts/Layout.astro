@@ -1,19 +1,19 @@
 ---
-import Head from "@components/partials/Head.astro";
-import Header from "@components/partials/Header.astro";
-import Footer from "@components/partials/Footer.astro";
-import Style from "@components/partials/Style.astro";
+import Head from '@components/partials/Head.astro';
+import Header from '@components/partials/Header.astro';
+import Footer from '@components/partials/Footer.astro';
+import Style from '@components/partials/Style.astro';
 
 const { subtitle } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="es">
-	<Head title="Full Print" {subtitle} />
-	<body>
-		<Header />
-		<slot />
-		<Footer />
-		<Style />
-	</body>
+<html lang='es'>
+  <Head title='Full Print' {subtitle} />
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+    <Style />
+  </body>
 </html>

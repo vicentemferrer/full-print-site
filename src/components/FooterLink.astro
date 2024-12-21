@@ -3,54 +3,54 @@ const { icon, url } = Astro.props;
 ---
 
 <a
-    href={url}
-    target={icon?.itHas ? "_blank" : "_self"}
-    class={icon?.itHas && icon?.variant === "brands" ? "social-link" : ""}
+  href={url}
+  target={icon?.itHas ? '_blank' : '_self'}
+  class={icon?.itHas && icon?.variant === 'brands' ? 'social-link' : ''}
 >
-    {icon?.itHas && <i class={`fi fi-${icon?.variant}-${icon?.suffix}`} />}
-    <slot />
+  {icon?.itHas && <i class={`fi fi-${icon?.variant}-${icon?.suffix}`} />}
+  <slot />
 </a>
 
 <style>
-    a:not(.social-link) {
-        &:hover {
-            color: var(--link-ft-hover-color);
-        }
+  a:not(.social-link) {
+    &:hover {
+      color: var(--link-ft-hover-color);
+    }
+  }
+
+  .social-link {
+    display: block;
+
+    & i {
+      font-size: 1.5rem;
     }
 
+    &:nth-child(1):hover {
+      color: var(--link-fb-hover-color);
+    }
+
+    &:nth-child(2):hover {
+      color: var(--link-ig-hover-color);
+    }
+
+    &:nth-child(3):hover {
+      color: var(--link-wp-hover-color);
+    }
+  }
+
+  @media (767px < width) {
     .social-link {
-        display: block;
-
-        & i {
-            font-size: 1.5rem;
-        }
-
-        &:nth-child(1):hover {
-            color: var(--link-fb-hover-color);
-        }
-
-        &:nth-child(2):hover {
-            color: var(--link-ig-hover-color);
-        }
-
-        &:nth-child(3):hover {
-            color: var(--link-wp-hover-color);
-        }
+      & i {
+        font-size: 1.1rem;
+      }
     }
+  }
 
-    @media (767px < width) {
-        .social-link {
-            & i {
-                font-size: 1.1rem;
-            }
-        }
+  @media (1023px < width) {
+    .social-link {
+      & i {
+        font-size: 1.25rem;
+      }
     }
-
-    @media (1023px < width) {
-        .social-link {
-            & i {
-                font-size: 1.25rem;
-            }
-        }
-    }
+  }
 </style>

@@ -1,77 +1,62 @@
-<div class="hero">
-    <picture>
-        <source
-            media="(min-width: 1440px)"
-            srcset="/images/hero-hq.webp"
-        />
-        <source
-            media="(min-width: 1024px)"
-            srcset="/images/hero-large.webp"
-        />
-        <source
-            media="(min-width: 768px)"
-            srcset="/images/hero-medium.webp"
-        />
-        <img
-            src="/images/hero-small.webp"
-            alt="Full Print store"
-            loading="lazy"
-        />
-    </picture>
-    <div class="background"></div>
-    <div class="content">
-        <h2>Entregando color a la Isla</h2>
-        <a href="/support/contact" class="action premium"
-            >¡Reserva YA!</a
-        >
-    </div>
+<div class='hero'>
+  <picture>
+    <source media='(min-width: 1440px)' srcset='/images/hero-hq.webp' />
+    <source media='(min-width: 1024px)' srcset='/images/hero-large.webp' />
+    <source media='(min-width: 768px)' srcset='/images/hero-medium.webp' />
+    <img src='/images/hero-small.webp' alt='Full Print store' loading='lazy' />
+  </picture>
+  <div class='background'></div>
+  <div class='content'>
+    <h2>Entregando color a la Isla</h2>
+    <a href='/support/contact' class='action premium'>¡Reserva YA!</a>
+  </div>
 </div>
 
 <style>
-    .hero {
-        grid-column: 1 / 4;
+  .hero {
+    grid-column: 1 / 4;
 
-        display: grid;
-        grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr;
 
-        & picture,
-        & .background,
-        & .content {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-            width: 100%;
-            height: auto;
-        }
-
-        & picture {
-            z-index: -1;
-
-            & img {
-                width: 100%;
-                filter: blur(2px);
-            }
-        }
-
-        & .background {
-            background: linear-gradient(
-                var(--shadow-background-color) 55%,
-                transparent
-            );
-        }
-
-        & .content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-
-            gap: 1rem;
-
-            & h2 {
-                font-size: xx-large;
-                width: 12ch;
-                text-align: center;
-            }
-        }
+    & picture,
+    & .background,
+    & .content {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 100%;
+      height: auto;
     }
+
+    & picture {
+      z-index: -1;
+
+      & img {
+        width: 100%;
+        filter: blur(2px);
+      }
+    }
+
+    & .background {
+      background: linear-gradient(
+        var(--shadow-background-color) 55%,
+        transparent
+      );
+    }
+
+    & .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      gap: 1rem;
+
+      & h2 {
+        font-size: xx-large;
+        width: 12ch;
+        text-align: center;
+      }
+    }
+  }
 </style>

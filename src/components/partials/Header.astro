@@ -1,21 +1,18 @@
 ---
-import Logo from "@components/Logo.astro";
-import wavesSVG from "@assets/waves-top.svg";
+import Logo from '@components/Logo.astro';
+import wavesSVG from '@assets/waves-top.svg';
 ---
 
 <header>
-    <section id="waves-top">
-        <img
-            src={wavesSVG.src}
-            alt="Brand Waves Top"
-        />
-    </section>
-    <a href="/">
-        <Logo type="header" />
-    </a>
-    <a href="#" id="menu"><i class="fi fi-br-menu-burger"></i></a>
-    <nav>
-        <section class="nav-fragment">
+  <section id='waves-top'>
+    <img src={wavesSVG.src} alt='Brand Waves Top' />
+  </section>
+  <a href='/'>
+    <Logo type='header' />
+  </a>
+  <!-- <a href="#" id="menu"><i class="fi fi-br-menu-burger"></i></a> -->
+  <nav>
+    <!-- <section class="nav-fragment">
             <ul class="nav-list">
                 <li>
                     <a href="/" class="nav-link">Inicio</a>
@@ -63,11 +60,11 @@ import wavesSVG from "@assets/waves-top.svg";
                 <a href="/support/how-to-buy">¿Cómo comprar?</a>
                 <a href="/support/contact">Contáctanos</a>
             </section>
-        </section>
-    </nav>
+        </section> -->
+  </nav>
 </header>
 
-<script>
+<!-- <script>
     const menu = document.getElementById("menu");
     const nav = document.querySelector("nav");
     const serviceBtn = document.getElementById("service-btn");
@@ -102,46 +99,46 @@ import wavesSVG from "@assets/waves-top.svg";
             closeServiceList(e);
         }
     });
-</script>
+</script> -->
 
 <style>
-    /* Mobile-first Layout */
+  /* Mobile-first Layout */
 
-    header {
-        grid-column: 1 / 4;
-        grid-row: 1 / 2;
+  header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
 
-        position: relative;
+    position: relative;
 
-        background-color: var(--main-background-color);
+    background-color: var(--main-background-color);
 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        padding-inline: 1rem;
+    padding-inline: 1rem;
 
-        & > *:not(#waves-top) {
-            z-index: 1;
-        }
-
-        & a {
-            display: block;
-        }
+    & > *:not(#waves-top) {
+      z-index: 1;
     }
 
-    #waves-top {
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100%;
-
-        overflow: hidden;
+    & a {
+      display: block;
     }
+  }
 
-    #menu {
+  #waves-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+  }
+
+  /* #menu {
         font-size: 1.8rem;
     }
 
@@ -272,16 +269,16 @@ import wavesSVG from "@assets/waves-top.svg";
                 }
             }
         }
+    } */
+
+  /* Larger Screens Adaptations */
+
+  @media (767px < width) {
+    header {
+      padding-right: 0;
     }
 
-    /* Larger Screens Adaptations */
-
-    @media (767px < width) {
-        header {
-            padding-right: 0;
-        }
-
-        #menu {
+    /* #menu {
             display: none;
         }
 
@@ -351,6 +348,6 @@ import wavesSVG from "@assets/waves-top.svg";
                     display: none;
                 }
             }
-        }
-    }
+        }*/
+  }
 </style>

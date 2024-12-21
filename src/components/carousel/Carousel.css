@@ -1,33 +1,33 @@
 .carousel,
 .carousel-track {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .carousel {
-    position: relative;
+  position: relative;
 
-    width: 90vw;
-    justify-content: center;
+  width: 90vw;
+  justify-content: center;
 }
 
 .carousel-track {
-    position: relative;
+  position: relative;
 
-    width: fit-content;
-    max-width: 100%;
+  width: fit-content;
+  max-width: 100%;
 
-    padding-inline: 1.5rem;
+  padding-inline: 1.5rem;
 
-    gap: 1rem;
+  gap: 1rem;
 
-    overflow: scroll hidden;
-    scroll-behavior: smooth;
+  overflow: scroll hidden;
+  scroll-behavior: smooth;
 
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
