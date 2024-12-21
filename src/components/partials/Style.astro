@@ -111,7 +111,9 @@
     grid-template-columns: auto 1fr auto;
   }
 
-  a {
+  a,
+  #menu,
+  nav summary {
     color: var(--link-color);
     text-decoration: none;
   }
@@ -137,11 +139,7 @@
       color: var(--button-hover-color);
 
       background:
-        linear-gradient(
-            var(--dark-gradient1-color),
-            var(--dark-gradient2-color)
-          )
-          text,
+        linear-gradient(var(--dark-gradient1-color), var(--dark-gradient2-color)) text,
         radial-gradient(
             circle at left,
             var(--premium-gradient1-color) 17%,
@@ -159,11 +157,7 @@
               var(--premium-gradient3-color) 90%
             )
             text,
-          linear-gradient(
-              var(--dark-gradient1-color),
-              var(--dark-gradient2-color)
-            )
-            padding-box,
+          linear-gradient(var(--dark-gradient1-color), var(--dark-gradient2-color)) padding-box,
           radial-gradient(
               circle at left,
               var(--premium-gradient1-color) 17%,
@@ -192,11 +186,7 @@
               var(--base-gradient3-color) 90%
             )
             text,
-          linear-gradient(
-              var(--dark-gradient1-color),
-              var(--dark-gradient2-color)
-            )
-            padding-box,
+          linear-gradient(var(--dark-gradient1-color), var(--dark-gradient2-color)) padding-box,
           radial-gradient(
               circle at left,
               var(--base-gradient1-color) 17%,
@@ -209,34 +199,14 @@
 
     &.secondary {
       background:
-        linear-gradient(
-            var(--dark-gradient1-color),
-            var(--dark-gradient2-color)
-          )
-          padding-box,
-        linear-gradient(
-            var(--secondary-gradient1-color),
-            var(--secondary-gradient2-color)
-          )
-          border-box;
+        linear-gradient(var(--dark-gradient1-color), var(--dark-gradient2-color)) padding-box,
+        linear-gradient(var(--secondary-gradient1-color), var(--secondary-gradient2-color)) border-box;
 
       &:hover {
         background:
-          linear-gradient(
-              var(--secondary-gradient1-color),
-              var(--secondary-gradient2-color)
-            )
-            text,
-          linear-gradient(
-              var(--dark-gradient1-color),
-              var(--dark-gradient2-color)
-            )
-            padding-box,
-          linear-gradient(
-              var(--secondary-gradient1-color),
-              var(--secondary-gradient2-color)
-            )
-            border-box;
+          linear-gradient(var(--secondary-gradient1-color), var(--secondary-gradient2-color)) text,
+          linear-gradient(var(--dark-gradient1-color), var(--dark-gradient2-color)) padding-box,
+          linear-gradient(var(--secondary-gradient1-color), var(--secondary-gradient2-color)) border-box;
       }
     }
 

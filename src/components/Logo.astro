@@ -3,13 +3,7 @@ const { type } = Astro.props;
 ---
 
 <figure>
-  <img
-    src='/images/logo.webp'
-    alt='Full Print logo'
-    width='150'
-    height='150'
-    loading='lazy'
-  />
+  <img src='/images/logo.webp' alt='Full Print logo' width='150' height='150' loading='lazy' />
   <figcaption>
     {type === 'header' ? <h1>Full Print</h1> : <h2>Full Print</h2>}
     <p>Tu lugar de impresión</p>

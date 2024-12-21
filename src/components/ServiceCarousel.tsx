@@ -10,9 +10,7 @@ type Props = {
 };
 
 function ServiceSlider({ anchors }: Props) {
-  const servicesCards = anchors.map((anchor: ServiceLink, i) => (
-    <ServiceCard key={i} props={anchor} />
-  ));
+  const servicesCards = anchors.map((anchor: ServiceLink, i) => <ServiceCard key={i} props={anchor} />);
 
   return <Carousel>{servicesCards}</Carousel>;
 }

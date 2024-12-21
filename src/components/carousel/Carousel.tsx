@@ -1,8 +1,6 @@
 import { useRef } from 'react';
 
-import CarouselButton, {
-  btnTypes,
-} from '@components/carousel/CarouselButton.tsx';
+import CarouselButton, { btnTypes } from '@components/carousel/CarouselButton.tsx';
 import './Carousel.css';
 
 function Carousel({ children }) {
@@ -15,12 +13,7 @@ function Carousel({ children }) {
     const currentScrollPosition = track.scrollLeft;
     const cardWidth = card.offsetWidth;
 
-    track.scroll(
-      isPrev
-        ? currentScrollPosition - cardWidth
-        : currentScrollPosition + cardWidth,
-      0,
-    );
+    track.scroll(isPrev ? currentScrollPosition - cardWidth : currentScrollPosition + cardWidth, 0);
   }
 
   return (

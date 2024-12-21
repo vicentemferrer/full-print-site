@@ -11,11 +11,7 @@
   border-radius: 0;
 
   background-color: none;
-  background: linear-gradient(
-    var(--gradient-slope),
-    var(--carousel-gradient1-color),
-    var(--carousel-gradient2-color)
-  );
+  background: linear-gradient(var(--gradient-slope), var(--carousel-gradient1-color), var(--carousel-gradient2-color));
 
   width: 2rem;
   height: 100%;
