@@ -2,12 +2,12 @@ import './CarouselButton.css';
 
 export enum btnTypes {
   Prev = 'prev',
-  Next = 'next',
+  Next = 'next'
 }
 
 const iconStyles = {
   prev: 'left',
-  next: 'right',
+  next: 'right'
 };
 
 type Props = {

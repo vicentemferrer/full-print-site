@@ -5,24 +5,24 @@ export async function getStaticPaths() {
   return [
     {
       params: { service: 'documents' },
-      props: { subtitle: 'Impresión de Documentos', categorySign: 'docs' },
+      props: { subtitle: 'Impresión de Documentos', categorySign: 'docs' }
     },
     {
       params: { service: 'pictures' },
-      props: { subtitle: 'Impresión de Imágenes', categorySign: 'pict' },
+      props: { subtitle: 'Impresión de Imágenes', categorySign: 'pict' }
     },
     {
       params: { service: 'marketing' },
-      props: { subtitle: 'Herramientas de Publicidad', categorySign: 'mktg' },
+      props: { subtitle: 'Herramientas de Publicidad', categorySign: 'mktg' }
     },
     {
       params: { service: 'design' },
-      props: { subtitle: 'Diseño Gráfico', categorySign: 'dsgn' },
+      props: { subtitle: 'Diseño Gráfico', categorySign: 'dsgn' }
     },
     {
       params: { service: 'miscelaneous' },
-      props: { subtitle: 'Otros Servicios', categorySign: 'misc' },
-    },
+      props: { subtitle: 'Otros Servicios', categorySign: 'misc' }
+    }
   ];
 }
 

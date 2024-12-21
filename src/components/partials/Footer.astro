@@ -4,68 +4,66 @@ import FooterLink from '@components/FooterLink.astro';
 
 import wavesSVG from '@assets/waves-bottom.svg';
 
-const currentYear = new Date().getFullYear().toString();
-
 const servicesList = [
   {
     icon: {
-      itHas: false,
+      itHas: false
     },
     url: 'services/documents',
-    content: 'Impresión de Documentos',
+    content: 'Impresión de Documentos'
   },
   {
     icon: {
-      itHas: false,
+      itHas: false
     },
     url: 'services/pictures',
-    content: 'Impresión de Imágenes',
+    content: 'Impresión de Imágenes'
   },
   {
     icon: {
-      itHas: false,
+      itHas: false
     },
     url: 'services/marketing',
-    content: 'Herramientas de Publicidad',
+    content: 'Herramientas de Publicidad'
   },
   {
     icon: {
-      itHas: false,
+      itHas: false
     },
     url: 'services/design',
-    content: 'Diseño Gráfico',
+    content: 'Diseño Gráfico'
   },
   {
     icon: {
-      itHas: false,
+      itHas: false
     },
     url: 'services/miscelaneous',
-    content: 'Otros Servicios',
-  },
+    content: 'Otros Servicios'
+  }
 ];
 
 const helpList = [
   {
     icon: {
-      itHas: false,
+      itHas: false
     },
     url: 'support/about',
-    content: '¿Quiénes somos?',
+    content: '¿Quiénes somos?'
   },
   {
     icon: {
-      itHas: false,
+      itHas: false
     },
     url: 'support/how-to-buy',
-    content: '¿Cómo comprar?',
+    content: '¿Cómo comprar?'
   },
   {
     icon: {
-      itHas: false,
+      itHas: false
     },
     url: 'support/contact',
-    content: 'Contáctanos',
-  },
+    content: 'Contáctanos'
+  }
 ];
 
 const contactList = [
@@ -73,29 +71,29 @@ const contactList = [
     icon: {
       itHas: true,
       variant: 'br',
-      suffix: 'phone-call',
+      suffix: 'phone-call'
     },
     url: 'tel:56950443336',
-    content: '+569 5044 3336',
+    content: '+569 5044 3336'
   },
   {
     icon: {
       itHas: true,
       variant: 'br',
-      suffix: 'envelope',
+      suffix: 'envelope'
     },
     url: 'mailto:fullprint.chiloe@gmail.com',
-    content: 'fullprint.chiloe@gmail.com',
+    content: 'fullprint.chiloe@gmail.com'
   },
   {
     icon: {
       itHas: true,
       variant: 'br',
-      suffix: 'marker',
+      suffix: 'marker'
     },
     url: 'https://maps.app.goo.gl/E2bgyVkRNTVgx9eK6',
-    content: 'Chacabuco 797, Ancud',
-  },
+    content: 'Chacabuco 797, Ancud'
+  }
 ];
 
 const socialList = [
@@ -103,26 +101,26 @@ const socialList = [
     icon: {
       itHas: true,
       variant: 'brands',
-      suffix: 'facebook',
+      suffix: 'facebook'
     },
-    url: 'https://www.facebook.com/fullprint.chiloe/',
+    url: 'https://www.facebook.com/fullprint.chiloe/'
   },
   {
     icon: {
       itHas: true,
       variant: 'brands',
-      suffix: 'instagram',
+      suffix: 'instagram'
     },
-    url: 'https://www.instagram.com/fullprint.chiloe/',
+    url: 'https://www.instagram.com/fullprint.chiloe/'
   },
   {
     icon: {
       itHas: true,
       variant: 'brands',
-      suffix: 'whatsapp',
+      suffix: 'whatsapp'
     },
-    url: 'https://wa.me/56950443336',
-  },
+    url: 'https://wa.me/56950443336'
+  }
 ];
 ---
 
@@ -182,7 +180,7 @@ const socialList = [
   <section class='row credits'>
     <article class='text-badge'>
       <p>
-        <i class='fi fi-br-copyright'></i>{currentYear} Full Print | Desarrollado por Vicente Ferrer
+        <i class='fi fi-br-copyright'></i><span id='c-year'></span> Full Print | Desarrollado por Vicente Ferrer
       </p>
     </article>
     <article class='social text-badge'>
@@ -191,9 +189,14 @@ const socialList = [
   </section>
 </footer>
 
+<script>
+  const cYear = document.getElementById('c-year');
+
+  cYear.textContent = new Date().getFullYear().toString();
+</script>
+
 <style>
   /* Mobile-first Layout */
-
   footer {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
@@ -265,8 +268,7 @@ const socialList = [
   }
 
   /* Larger Screens Adaptations */
-
-  @media (767px < width) {
+  @media (min-width: 768px) {
     footer {
       & .row {
         &.info {
@@ -315,7 +317,7 @@ const socialList = [
     }
   }
 
-  @media (1023px < width) {
+  @media (min-width: 1024px) {
     footer {
       & .row {
         &.info {
@@ -335,7 +337,7 @@ const socialList = [
     }
   }
 
-  @media (1247px < width) {
+  @media (min-width: 1248px) {
     footer {
       & .row {
         &.credits {
@@ -347,7 +349,7 @@ const socialList = [
     }
   }
 
-  @media (1439px < width) {
+  @media (min-width: 1440px) {
     footer {
       & .row {
         &.credits {
@@ -357,7 +359,7 @@ const socialList = [
     }
   }
 
-  @media (2559px < width) {
+  @media (min-width: 2560px) {
     footer {
       & .row {
         &.credits {
