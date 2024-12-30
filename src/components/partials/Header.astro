@@ -53,11 +53,12 @@ import wavesSVG from '@assets/waves-top.svg';
 </header>
 
 <script>
+  import { qs } from '@scripts/utils.mjs';
   const desktopMediaQuery = matchMedia('(min-width: 768px)');
 
   function popoverHandler(event) {
-    const navBtn = document.getElementById('menu');
-    const nav = document.getElementById('siteNav');
+    const navBtn = qs('#menu');
+    const nav = qs('#siteNav');
 
     if (event.matches) {
       if (nav.hasAttribute('popover')) {
@@ -76,7 +77,7 @@ import wavesSVG from '@assets/waves-top.svg';
 
   function closeServicesDetails(event) {
     if (!event.target.matches('.nav-list details summary') && !event.target.matches('.nav-list details li a')) {
-      const details = document.querySelector('.nav-list details');
+      const details = qs('.nav-list details');
       if (details.open) {
         details.removeAttribute('open');
       }

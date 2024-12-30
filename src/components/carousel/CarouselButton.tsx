@@ -1,13 +1,13 @@
-import './CarouselButton.css';
+import "./CarouselButton.css";
 
 export enum btnTypes {
-  Prev = 'prev',
-  Next = 'next'
+  Prev = "prev",
+  Next = "next",
 }
 
 const iconStyles = {
-  prev: 'left',
-  next: 'right'
+  prev: "left",
+  next: "right",
 };
 
 type Props = {

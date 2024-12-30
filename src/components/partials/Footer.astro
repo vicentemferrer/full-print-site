@@ -190,7 +190,8 @@ const socialList = [
 </footer>
 
 <script>
-  const cYear = document.getElementById('c-year');
+  import { qs } from '@scripts/utils.mjs';
+  const cYear = qs('#c-year');
   cYear.textContent = new Date().getFullYear().toString();
 </script>
 
