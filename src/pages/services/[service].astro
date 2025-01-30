@@ -1,5 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import ServiceGallery from '@components/ServiceGallery.jsx';
 
 export async function getStaticPaths() {
   return [
@@ -32,15 +33,12 @@ const { subtitle, categorySign } = Astro.props;
 <Layout {subtitle}>
   <main data-category={categorySign}>
     <h2>{subtitle}</h2>
+    <ServiceGallery client:load />
   </main>
 </Layout>
 
-<script>
-  import ExternalServices from '@scripts/ExternalServices.mjs';
-  import { qs } from '@scripts/utils.mjs';
-  const { PUBLIC_SERVICES_URL } = import.meta.env;
-  const dataSource = new ExternalServices();
-  const { category } = qs('main').dataset;
-  const data = await dataSource.getServices(PUBLIC_SERVICES_URL, category);
-  console.log(data);
-</script>
+<style>
+  main h2 {
+    grid-column: 2 / 3;
+  }
+</style>
