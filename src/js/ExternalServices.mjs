@@ -14,4 +14,11 @@ export default class ExternalServices {
 
     return dataset.filter((elem) => elem.category === serviceType);
   }
+
+  async getProducts(url) {
+    const res = await fetch(url);
+    const dataset = await convertToJSON(res);
+
+    return dataset;
+  }
 }

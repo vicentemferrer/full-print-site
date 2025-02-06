@@ -1,7 +1,22 @@
 ---
 import Layout from '@layouts/Layout.astro';
+import ProductGallery from '@components/ProductGallery.jsx';
 ---
 
 <Layout subtitle='Productos'>
-  <div></div>
+  <main>
+    <h2>Productos</h2>
+    <ProductGallery client:load />
+  </main>
 </Layout>
+
+<style>
+  main h2 {
+    grid-column: 2 / 3;
+
+    text-align: center;
+    margin-block: 2rem;
+
+    font-size: xx-large;
+  }
+</style>

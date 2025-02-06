@@ -1,0 +1,27 @@
+.gallery {
+  grid-column: 2 / 3;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.gallery li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.gallery img {
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    margin-inline: 5rem;
+  }
+}

@@ -3,36 +3,36 @@
     "name": "Resma Hoja Carta x250",
     "description": "Papel bond de 72g (250 hojas)",
     "price": 4690,
-    "img_url": "images/productos/carta-1.webp"
+    "imgPath": "/images/productos/carta-1.webp"
   },
   {
     "name": "Resma Hoja Carta x500",
     "description": "Papel bond de 72g (500 hojas)",
     "price": 8290,
-    "img_url": "images/productos/carta-2.webp"
+    "imgPath": "/images/productos/carta-2.webp"
   },
   {
     "name": "Resma Hoja Oficio x500",
     "description": "Papel bond de 72g (500 hojas)",
     "price": 9690,
-    "img_url": "images/productos/oficio.webp"
+    "imgPath": "/images/productos/oficio.webp"
   },
   {
     "name": "Sobres",
     "description": "Tamaño carta, americano y más",
     "price": 300,
-    "img_url": "images/productos/sobre.webp"
+    "imgPath": "/images/productos/sobre.webp"
   },
   {
     "name": "Fundas Transparentes",
     "description": "Tamaño carta y oficio",
     "price": 200,
-    "img_url": "images/productos/funda.webp"
+    "imgPath": "/images/productos/funda.webp"
   },
   {
     "name": "Carpetas Plastificadas",
     "description": "",
     "price": 900,
-    "img_url": "images/productos/carpeta.webp"
+    "imgPath": "/images/productos/carpeta.webp"
   }
 ]
