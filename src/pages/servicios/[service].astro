@@ -1,27 +1,27 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import ServiceGallery from '@components/ServiceGallery.jsx';
+import ServiceGallery from '@components/GalleryComponents/ServiceGallery.jsx';
 
 export async function getStaticPaths() {
   return [
     {
-      params: { service: 'documents' },
+      params: { service: 'documentos' },
       props: { subtitle: 'Impresión de Documentos', categorySign: 'docs' }
     },
     {
-      params: { service: 'pictures' },
+      params: { service: 'imagenes' },
       props: { subtitle: 'Impresión de Imágenes', categorySign: 'pict' }
     },
     {
-      params: { service: 'marketing' },
+      params: { service: 'publicidad' },
       props: { subtitle: 'Herramientas de Publicidad', categorySign: 'mktg' }
     },
     {
-      params: { service: 'design' },
+      params: { service: 'diseno' },
       props: { subtitle: 'Diseño Gráfico', categorySign: 'dsgn' }
     },
     {
-      params: { service: 'miscelaneous' },
+      params: { service: 'otros' },
       props: { subtitle: 'Otros Servicios', categorySign: 'misc' }
     }
   ];

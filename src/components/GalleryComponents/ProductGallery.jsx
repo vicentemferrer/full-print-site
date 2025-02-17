@@ -1,4 +1,4 @@
-import Gallery from "./Gallery.jsx";
+import Gallery from "./gallery/Gallery.jsx";
 import ExternalServices from "@scripts/ExternalServices.mjs";
 
 async function fetchContent(setProducts, filterList) {

@@ -4,33 +4,33 @@ import type { ServiceLink } from '@devTypes/ServiceLink.ts';
 import Layout from '@layouts/Layout.astro';
 
 import Hero from '@components/Hero.astro';
-import ServiceCarousel from '@components/ServiceCarousel.tsx';
+import ServiceCarousel from '@components/CarouselComponents/ServiceCarousel.tsx';
 
 const servicesLinks: ServiceLink[] = [
   {
     icon: 'document',
     title: 'Impresión de Documentos',
-    url: 'services/documents'
+    url: 'servicios/documentos'
   },
   {
     icon: 'picture',
     title: 'Impresión de Imágenes',
-    url: 'services/pictures'
+    url: 'servicios/imagenes'
   },
   {
     icon: 'lightbulb-on',
     title: 'Herramientas de Publicidad',
-    url: 'services/marketing'
+    url: 'servicios/publicidad'
   },
   {
     icon: 'customize-edit',
     title: 'Diseño Gráfico',
-    url: 'services/design'
+    url: 'servicios/diseno'
   },
   {
     icon: 'square-plus',
     title: 'Otros Servicios',
-    url: 'services/miscelaneous'
+    url: 'servicios/otros'
   }
 ];
 ---

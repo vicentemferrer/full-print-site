@@ -1,4 +1,4 @@
-import Gallery from "./Gallery.jsx";
+import Gallery from "./gallery/Gallery.jsx";
 import ExternalServices from "@scripts/ExternalServices.mjs";
 import { qs } from "@scripts/utils.mjs";
 

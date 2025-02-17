@@ -1,7 +1,7 @@
 import type { ServiceLink } from "@devTypes/ServiceLink.ts";
 
-import Carousel from "@components/carousel/Carousel.tsx";
-import ServiceCard from "@components/ServiceCard.tsx";
+import Carousel from "./carousel/Carousel.tsx";
+import ServiceCard from "./ServiceCard.tsx";
 
 import "./ServiceCarousel.css";
 

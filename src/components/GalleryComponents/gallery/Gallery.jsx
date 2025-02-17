@@ -28,7 +28,7 @@ const Gallery = (fetchContent) => () => {
 
   useEffect(() => {
     fetchContent(setItems, filterGallery);
-  }, [fetchContent]);
+  }, []);
 
   return (
     <ul className="gallery">

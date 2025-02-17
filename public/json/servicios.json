@@ -81,133 +81,133 @@
     "name": "Mejora de Calidad",
     "description": "Tenemos descuento al imprimirla",
     "price": 5000,
-    "imgPath": "/images/servicios/fotografia/mejora-calidad.webp"
+    "imgPath": "/images/servicios/fotografia/mejora.webp"
   },
   {
     "category": "mktg",
     "name": "Tarjetas de Presentación",
     "description": "A mayor cantidad, es menor el precio unitario",
     "price": 13500,
-    "imgPath": "/images/servicios/publicidad/tarjeta.webp"
+    "imgPath": "/images/servicios/herramientas/tarjeta.webp"
   },
   {
     "category": "mktg",
     "name": "Flyers",
     "description": "A mayor cantidad, es menor el precio unitario",
     "price": 19990,
-    "imgPath": "/images/servicios/publicidad/flyer.webp"
+    "imgPath": "/images/servicios/herramientas/flyer.webp"
   },
   {
     "category": "mktg",
     "name": "Posters",
     "description": "Aprovecha la promoción poster + diseño del poster",
     "price": 6000,
-    "imgPath": "/images/servicios/publicidad/poster.webp"
+    "imgPath": "/images/servicios/herramientas/poster.webp"
   },
   {
     "category": "mktg",
     "name": "Stickers",
     "description": "Hacemos de todos los tamaños y medidas",
     "price": 5000,
-    "imgPath": "/images/servicios/publicidad/sticker.webp"
+    "imgPath": "/images/servicios/herramientas/sticker.webp"
   },
   {
     "category": "mktg",
     "name": "Diplomas",
     "description": "Te hacemos un precio al diseñarlo con nosotros",
     "price": 4000,
-    "imgPath": "/images/servicios/publicidad/diploma.webp"
+    "imgPath": "/images/servicios/herramientas/diploma.webp"
   },
   {
     "category": "mktg",
     "name": "Invitaciones",
     "description": "Aprovecha la promo de invitación + diseño + sobre",
     "price": 4000,
-    "imgPath": "/images/servicios/publicidad/invitacion.webp"
+    "imgPath": "/images/servicios/herramientas/invitacion.webp"
   },
   {
     "category": "mktg",
     "name": "Calendarios",
     "description": "También podemos mejorar la calidad de tu foto",
     "price": 2500,
-    "imgPath": "/images/servicios/publicidad/calendario.webp"
+    "imgPath": "/images/servicios/herramientas/calendario.webp"
   },
   {
     "category": "mktg",
     "name": "Marca Páginas",
     "description": "Tamaño y forma totalmente personalizado",
     "price": 2000,
-    "imgPath": "/images/servicios/publicidad/marca-pagina.webp"
+    "imgPath": "/images/servicios/herramientas/marca-pagina.webp"
   },
   {
     "category": "mktg",
     "name": "Imanes",
     "description": "Tamaño y forma totalmente personalizado",
     "price": 5000,
-    "imgPath": "/images/servicios/publicidad/iman.webp"
+    "imgPath": "/images/servicios/herramientas/iman.webp"
   },
   {
     "category": "mktg",
     "name": "Pendones",
     "description": "Todos los tamaños, también con roller si lo necesita",
     "price": 15000,
-    "imgPath": "/images/servicios/publicidad/pendon.webp"
+    "imgPath": "/images/servicios/herramientas/pendon.webp"
   },
   {
     "category": "mktg",
     "name": "Letreros PVC",
     "description": "Cotiza tu letrero con base de madera y aprovecha la promo letrero + diseño",
     "price": 25000,
-    "imgPath": "/images/servicios/publicidad/letrero-pvc.webp"
+    "imgPath": "/images/servicios/herramientas/letrero-pvc.webp"
   },
   {
     "category": "mktg",
     "name": "Adhesivos PVC",
     "description": "También hacemos troquelados",
     "price": 25900,
-    "imgPath": "/images/servicios/publicidad/adhesivo-pvc.webp"
+    "imgPath": "/images/servicios/herramientas/adhesivo-pvc.webp"
   },
   {
     "category": "mktg",
     "name": "Windows Vision",
     "description": "Cotiza la instalación del windows vision",
     "price": 20000,
-    "imgPath": "/images/servicios/publicidad/window-vision.webp"
+    "imgPath": "/images/servicios/herramientas/window-vision.webp"
   },
   {
     "category": "mktg",
     "name": "Vinilo de Corte",
     "description": "También podemos diseñarlo",
     "price": 5000,
-    "imgPath": "/images/servicios/publicidad/vinilo.webp"
+    "imgPath": "/images/servicios/herramientas/vinilo.webp"
   },
   {
     "category": "mktg",
     "name": "Letreros Luminosos",
     "description": "Cotiza tu instalación del letrero",
     "price": 85000,
-    "imgPath": "/images/servicios/publicidad/letrero-luminoso.webp"
+    "imgPath": "/images/servicios/herramientas/letrero-luminoso.webp"
   },
   {
     "category": "mktg",
     "name": "Letreros Volumétricos",
     "description": "Podemos diseñarlo e instalarlo",
     "price": 200000,
-    "imgPath": "/images/servicios/publicidad/letrero-volumetrico.webp"
+    "imgPath": "/images/servicios/herramientas/letrero-volumetrico.webp"
   },
   {
     "category": "mktg",
     "name": "Letreros Sintra",
     "description": "Cotiza + el diseño del letrero",
     "price": 30000,
-    "imgPath": "/images/servicios/publicidad/letrero-sintra.webp"
+    "imgPath": "/images/servicios/herramientas/letrero-sintra.webp"
   },
   {
     "category": "mktg",
     "name": "Palomas Publicitarias",
     "description": "Se la entregamos a domicilio también",
     "price": 50000,
-    "imgPath": "/images/servicios/publicidad/paloma-publicitaria.webp"
+    "imgPath": "/images/servicios/herramientas/paloma-publicitaria.webp"
   },
   {
     "category": "dsgn",
@@ -228,21 +228,21 @@
     "name": "Certificados",
     "description": "Aprovecha la promoción de diseño de certificado + impresión del certificado",
     "price": 6000,
-    "imgPath": "/images/servicios/publicidad/diploma.webp"
+    "imgPath": "/images/servicios/herramientas/diploma.webp"
   },
   {
     "category": "dsgn",
     "name": "Tarjetas de Presentación",
     "description": "Diseñamos una o dos caras y también las imprimimos",
     "price": 5000,
-    "imgPath": "/images/servicios/publicidad/tarjeta.webp"
+    "imgPath": "/images/servicios/herramientas/tarjeta.webp"
   },
   {
     "category": "dsgn",
     "name": "Flyers",
     "description": "Aprovecha la promo de diseño + impresión flyers",
     "price": 12000,
-    "imgPath": "/images/servicios/publicidad/flyer.webp"
+    "imgPath": "/images/servicios/herramientas/flyer.webp"
   },
   {
     "category": "dsgn",
