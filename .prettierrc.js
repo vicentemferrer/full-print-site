@@ -9,6 +9,6 @@ export const arrowParens = "always";
 export const plugins = ["prettier-plugin-astro"];
 export const overrides = [
   { files: "*.astro", options: { parser: "astro" } },
-  { files: "*.js", options: { parser: "babel" } },
-  { files: "*.mjs", options: { parser: "babel" } },
+  { files: "*.js", options: { parser: "vite" } },
+  { files: "*.mjs", options: { parser: "vite" } },
 ];
