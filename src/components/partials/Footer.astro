@@ -4,124 +4,7 @@ import FooterLink from '@components/FooterLink.astro';
 
 import wavesSVG from '@assets/waves-bottom.svg';
 
-const servicesList = [
-  {
-    icon: {
-      itHas: false
-    },
-    url: 'servicios/documentos',
-    content: 'Impresión de Documentos'
-  },
-  {
-    icon: {
-      itHas: false
-    },
-    url: 'servicios/imagenes',
-    content: 'Impresión de Imágenes'
-  },
-  {
-    icon: {
-      itHas: false
-    },
-    url: 'servicios/publicidad',
-    content: 'Herramientas de Publicidad'
-  },
-  {
-    icon: {
-      itHas: false
-    },
-    url: 'servicios/diseno',
-    content: 'Diseño Gráfico'
-  },
-  {
-    icon: {
-      itHas: false
-    },
-    url: 'servicios/otros',
-    content: 'Otros Servicios'
-  }
-];
-
-const helpList = [
-  {
-    icon: {
-      itHas: false
-    },
-    url: 'soporte/sobre-nosotros',
-    content: '¿Quiénes somos?'
-  },
-  {
-    icon: {
-      itHas: false
-    },
-    url: 'soporte/como-comprar',
-    content: '¿Cómo comprar?'
-  },
-  {
-    icon: {
-      itHas: false
-    },
-    url: 'soporte/contacto',
-    content: 'Contáctanos'
-  }
-];
-
-const contactList = [
-  {
-    icon: {
-      itHas: true,
-      variant: 'br',
-      suffix: 'phone-call'
-    },
-    url: 'tel:56950443336',
-    content: '+569 5044 3336'
-  },
-  {
-    icon: {
-      itHas: true,
-      variant: 'br',
-      suffix: 'envelope'
-    },
-    url: 'mailto:fullprint.chiloe@gmail.com',
-    content: 'fullprint.chiloe@gmail.com'
-  },
-  {
-    icon: {
-      itHas: true,
-      variant: 'br',
-      suffix: 'marker'
-    },
-    url: 'https://maps.app.goo.gl/E2bgyVkRNTVgx9eK6',
-    content: 'Chacabuco 797, Ancud'
-  }
-];
-
-const socialList = [
-  {
-    icon: {
-      itHas: true,
-      variant: 'brands',
-      suffix: 'facebook'
-    },
-    url: 'https://www.facebook.com/fullprint.chiloe/'
-  },
-  {
-    icon: {
-      itHas: true,
-      variant: 'brands',
-      suffix: 'instagram'
-    },
-    url: 'https://www.instagram.com/fullprint.chiloe/'
-  },
-  {
-    icon: {
-      itHas: true,
-      variant: 'brands',
-      suffix: 'whatsapp'
-    },
-    url: 'https://wa.me/56950443336'
-  }
-];
+import { footer, support, contact, social } from '@lib/data.ts';
 ---
 
 <footer>
@@ -136,10 +19,10 @@ const socialList = [
       <h4>Servicios</h4>
       <ul>
         {
-          servicesList.map(({ icon, url, content }) => (
+          footer.map(({ url, title }) => (
             <li>
-              <FooterLink icon={icon} url={`/${url}`}>
-                {content}
+              <FooterLink {url}>
+                {title}
               </FooterLink>
             </li>
           ))
@@ -150,10 +33,10 @@ const socialList = [
       <h4>Información</h4>
       <ul>
         {
-          helpList.map(({ icon, url, content }) => (
+          support.map(({ url, title }) => (
             <li>
-              <FooterLink icon={icon} url={`/${url}`}>
-                {content}
+              <FooterLink {url}>
+                {title}
               </FooterLink>
             </li>
           ))
@@ -165,10 +48,10 @@ const socialList = [
       <address>
         <ul>
           {
-            contactList.map(({ icon, url, content }) => (
+            contact.map(({ icon, url, title }) => (
               <li>
-                <FooterLink icon={icon} url={url}>
-                  {` ${content}`}
+                <FooterLink {icon} {url}>
+                  {` ${title}`}
                 </FooterLink>
               </li>
             ))
@@ -184,7 +67,7 @@ const socialList = [
       </p>
     </article>
     <article class='social text-badge'>
-      {socialList.map(({ icon, url }) => <FooterLink icon={icon} url={url} />)}
+      {social.map(({ icon, url }) => <FooterLink {icon} {url} />)}
     </article>
   </section>
 </footer>

@@ -1,4 +1,4 @@
-import type { ServiceLink } from "@devTypes/ServiceLink.ts";
+import type { Link } from "@lib/definitions.ts";
 
 import Carousel from "./carousel/Carousel.tsx";
 import ServiceCard from "./ServiceCard.tsx";
@@ -6,11 +6,11 @@ import ServiceCard from "./ServiceCard.tsx";
 import "./ServiceCarousel.css";
 
 type Props = {
-  anchors: ServiceLink[];
+  anchors: Link[];
 };
 
 function ServiceSlider({ anchors }: Props) {
-  const servicesCards = anchors.map((anchor: ServiceLink, i) => (
+  const servicesCards = anchors.map((anchor: Link, i) => (
     <ServiceCard key={i} props={anchor} />
   ));
 

@@ -9,7 +9,7 @@
       "@scripts/*": ["src/js/*"],
       "@layouts/*": ["src/layouts/*"],
       "@assets/*": ["src/assets/*"],
-      "@devTypes/*": ["src/devTypes/*"]
+      "@lib/*": ["src/lib/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

@@ -4,10 +4,10 @@ const { icon, url } = Astro.props;
 
 <a
   href={url}
-  target={icon?.itHas ? '_blank' : '_self'}
-  class={icon?.itHas && icon?.variant === 'brands' ? 'social-link' : ''}
+  target={icon ? '_blank' : '_self'}
+  class={icon && icon?.variant === 'brands' ? 'social-link' : ''}
 >
-  {icon?.itHas && <i class={`fi fi-${icon?.variant}-${icon?.suffix}`} />}
+  {icon && <i class={`fi fi-${icon?.variant}-${icon?.suffix}`} />}
   <slot />
 </a>
 

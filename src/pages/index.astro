@@ -1,45 +1,16 @@
 ---
-import type { ServiceLink } from '@devTypes/ServiceLink.ts';
-
 import Layout from '@layouts/Layout.astro';
-
 import Hero from '@components/Hero.astro';
 import ServiceCarousel from '@components/CarouselComponents/ServiceCarousel.tsx';
 
-const servicesLinks: ServiceLink[] = [
-  {
-    icon: 'document',
-    title: 'Impresión de Documentos',
-    url: 'servicios/documentos'
-  },
-  {
-    icon: 'picture',
-    title: 'Impresión de Imágenes',
-    url: 'servicios/imagenes'
-  },
-  {
-    icon: 'lightbulb-on',
-    title: 'Herramientas de Publicidad',
-    url: 'servicios/publicidad'
-  },
-  {
-    icon: 'customize-edit',
-    title: 'Diseño Gráfico',
-    url: 'servicios/diseno'
-  },
-  {
-    icon: 'square-plus',
-    title: 'Otros Servicios',
-    url: 'servicios/otros'
-  }
-];
+import { carousel as carouselLinks } from '@lib/data.ts';
 ---
 
 <Layout subtitle='Inicio'>
   <main>
     <Hero />
 
-    <ServiceCarousel anchors={servicesLinks} client:visible />
+    <ServiceCarousel anchors={carouselLinks} client:visible />
   </main>
 </Layout>
 
