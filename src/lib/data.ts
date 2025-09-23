@@ -53,15 +53,7 @@ const footer: Link[] = [
 
 const support: Link[] = [
   {
-    url: "/soporte/sobre-nosotros",
-    title: "¿Quiénes somos?",
-  },
-  {
-    url: "/soporte/como-comprar",
-    title: "¿Cómo comprar?",
-  },
-  {
-    url: "/soporte/contacto",
+    url: "/contact",
     title: "Contáctanos",
   },
 ];
@@ -72,8 +64,8 @@ const contact: Link[] = [
       variant: "br",
       suffix: "phone-call",
     },
-    url: "tel:56950443336",
-    title: "+569 5044 3336",
+    url: "tel:56994069861",
+    title: "+56 9 9406 9861",
   },
   {
     icon: {
@@ -113,7 +105,7 @@ const social: Link[] = [
       variant: "brands",
       suffix: "whatsapp",
     },
-    url: "https://wa.me/56950443336",
+    url: "https://wa.me/56994069861",
   },
 ];
 

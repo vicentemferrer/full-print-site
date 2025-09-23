@@ -41,14 +41,12 @@ import wavesSVG from '@assets/waves-top.svg';
       </li>
 
       <li>
-        <a href='/productos' class='nav-link'> Productos </a>
+        <a href='/products' class='nav-link'> Productos </a>
+      </li>
+      <li>
+        <a href='/contact' class='nav-link'>Contáctanos</a>
       </li>
     </ul>
-    <section class='help'>
-      <a href='/soporte/sobre-nosotros'>¿Quiénes somos?</a>
-      <a href='/soporte/como-comprar'>¿Cómo comprar?</a>
-      <a href='/soporte/contacto'>Contáctanos</a>
-    </section>
   </nav>
 </header>
 
@@ -160,87 +158,72 @@ import wavesSVG from '@assets/waves-top.svg';
       transition: background-color 500ms ease-in-out;
     }
 
-    & ul li {
+    & ul li, summary {
       list-style: none;
     }
 
-    & .nav-list {
-      width: 100%;
+    & .nav-list li {
+      &:nth-child(1) .nav-link:hover {
+        background: linear-gradient(
+          var(--home-gradient1-color),
+          var(--home-gradient2-color),
+          var(--home-gradient3-color)
+        );
+      }
 
-      & li {
-        &:nth-child(1) .nav-link:hover {
-          background: linear-gradient(
-            var(--home-gradient1-color),
-            var(--home-gradient2-color),
-            var(--home-gradient3-color)
-          );
-        }
+      &:nth-child(2) .nav-link:hover {
+        background: linear-gradient(
+          var(--services-gradient1-color),
+          var(--services-gradient2-color),
+          var(--services-gradient3-color)
+        );
+      }
 
-        &:nth-child(2) .nav-link:hover {
-          background: linear-gradient(
-            var(--services-gradient1-color),
-            var(--services-gradient2-color),
-            var(--services-gradient3-color)
-          );
-        }
+      &:nth-child(3) .nav-link:hover {
+        background: linear-gradient(
+          var(--products-gradient1-color),
+          var(--products-gradient2-color),
+          var(--products-gradient3-color)
+        );
+      }
 
-        &:nth-child(3) .nav-link:hover {
-          background: linear-gradient(
-            var(--products-gradient1-color),
-            var(--products-gradient2-color),
-            var(--products-gradient3-color)
-          );
-        }
+      &:nth-child(4) .nav-link:hover {
+        background: linear-gradient(
+          var(--contact-gradient1-color),
+          var(--contact-gradient2-color),
+          var(--contact-gradient3-color)
+        );
+      }
 
-        & .nav-link {
-          font-weight: 600;
+      & .nav-link {
+        font-weight: 600;
 
-          text-shadow: 1px 1px 3px var(--link-shadow-color);
+        text-shadow: 1px 1px 3px var(--link-shadow-color);
 
-          padding: 0.75rem 2.5rem;
-          transition: background-color ease-in-out 200ms;
-        }
-
-        & details {
-          cursor: pointer;
-
-          & summary {
-            list-style: none;
-          }
-
-          & li {
-            width: auto;
-
-            & a {
-              display: block;
-              padding: 0.75rem 3rem;
-
-              font-size: 0.85rem;
-              font-weight: 500;
-
-              border-left: 3px solid transparent;
-
-              &:hover {
-                border-left: 3px solid white;
-                background-color: #7777;
-              }
-            }
-          }
-        }
+        padding: 0.75rem 2.5rem;
+        transition: background-color ease-in-out 200ms;
       }
     }
 
-    & .help {
-      padding-block: 1rem;
+    & .nav-list details {
+      cursor: pointer;
 
-      background-color: #5557;
+      & li {
+        width: auto;
 
-      & a {
-        display: block;
-        padding: 0.75rem 2rem;
+        & a {
+          display: block;
+          padding: 0.75rem 3rem;
 
-        &:hover {
-          color: var(--link-help-hover-color);
+          font-size: 0.85rem;
+          font-weight: 500;
+
+          border-left: 3px solid transparent;
+
+          &:hover {
+            border-left: 3px solid white;
+            background-color: #7777;
+          }
         }
       }
     }
@@ -309,10 +292,7 @@ import wavesSVG from '@assets/waves-top.svg';
             }
           }
         }
-      }
-
-      & .help {
-        display: none;
+  
       }
     }
   }
