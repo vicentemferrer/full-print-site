@@ -1,6 +1,6 @@
 ---
 import Logo from '@components/Logo.astro';
-import FooterLink from '@components/FooterLink.astro';
+import Link from '@components/Link.astro';
 
 import wavesSVG from '@assets/waves-bottom.svg';
 
@@ -21,9 +21,9 @@ import { footer, support, contact, social } from '@lib/data.ts';
         {
           footer.map(({ url, title }) => (
             <li>
-              <FooterLink {url}>
+              <Link {url}>
                 {title}
-              </FooterLink>
+              </Link>
             </li>
           ))
         }
@@ -35,9 +35,9 @@ import { footer, support, contact, social } from '@lib/data.ts';
         {
           support.map(({ url, title }) => (
             <li>
-              <FooterLink {url}>
+              <Link {url}>
                 {title}
-              </FooterLink>
+              </Link>
             </li>
           ))
         }
@@ -50,9 +50,9 @@ import { footer, support, contact, social } from '@lib/data.ts';
           {
             contact.map(({ icon, url, title }) => (
               <li>
-                <FooterLink {icon} {url}>
+                <Link {icon} {url}>
                   {` ${title}`}
-                </FooterLink>
+                </Link>
               </li>
             ))
           }
@@ -67,7 +67,7 @@ import { footer, support, contact, social } from '@lib/data.ts';
       </p>
     </article>
     <article class='social text-badge'>
-      {social.map(({ icon, url }) => <FooterLink {icon} {url} />)}
+      {social.map(({ icon, url }) => <Link {icon} {url} />)}
     </article>
   </section>
 </footer>
