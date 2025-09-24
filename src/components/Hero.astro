@@ -1,19 +1,19 @@
 ---
 ---
 
-<div class='hero'>
+<section class='hero'>
   <picture>
-    <source media='(min-width: 1440px)' srcset='/images/hero-hq.webp' />
+    <!-- <source media='(min-width: 1440px)' srcset='/images/hero-hq.webp' />
     <source media='(min-width: 1024px)' srcset='/images/hero-large.webp' />
-    <source media='(min-width: 768px)' srcset='/images/hero-medium.webp' />
-    <img src='/images/hero-small.webp' alt='Full Print store' loading='lazy' />
+    <source media='(min-width: 768px)' srcset='/images/hero-medium.webp' /> -->
+    <img src='/images/full-print-store.webp' alt='Full Print store' loading='lazy' />
   </picture>
   <div class='background'></div>
   <div class='content'>
     <h2>Entregando color a la Isla</h2>
     <a href='/contact' class='action premium'>¡Reserva YA!</a>
   </div>
-</div>
+</section>
 
 <style>
   .hero {
@@ -36,7 +36,11 @@
 
       & img {
         width: 100%;
+        height: auto;
         filter: blur(2px);
+        object-fit: cover;
+
+        transition: height .5s ease-in-out;
       }
     }
 
@@ -56,6 +60,22 @@
         font-size: xx-large;
         width: 12ch;
         text-align: center;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      & picture img {
+        height: 500px;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero {
+      & picture img {
+        height: 600px;
       }
     }
   }
