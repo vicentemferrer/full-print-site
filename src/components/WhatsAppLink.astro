@@ -1,0 +1,36 @@
+---
+const { phone } = Astro.props;
+---
+
+<div class="wpp">
+  <a href={`https://wa.me/${phone}`} target="_blank">
+    <i class=`fi fi-brands-whatsapp` />
+  </a>
+</div>
+
+<style>
+  .wpp {
+    display: grid;
+    place-items: center;
+
+    width: fit-content;
+
+    position: sticky;
+    bottom: 2rem;
+    left: 100%;
+
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+
+    padding-block: .9rem .5rem;
+    padding-inline: 1rem;
+
+    background-color: var(--wp-color);
+    
+    border-radius: 10rem;
+  }
+
+  .wpp i {
+    font-size: 2.25rem;
+  }
+</style>
