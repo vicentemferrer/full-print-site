@@ -12,7 +12,7 @@ export default class ExternalServices {
     const res = await fetch(url);
     const dataset = await convertToJSON(res);
 
-    return dataset.filter((elem) => elem.category === serviceType);
+    return dataset.filter((elem) => elem.category.includes(serviceType));
   }
 
   async getProducts(url) {

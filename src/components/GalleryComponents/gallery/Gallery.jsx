@@ -5,7 +5,7 @@ import { numberFormat, loadImage } from "@scripts/utils.mjs";
 
 async function filterGallery(list) {
   const galleryPromises = list.map(async (item) => {
-    const path = item.imgPath;
+    const path = item.img;
 
     try {
       await loadImage(path);
@@ -32,11 +32,10 @@ const Gallery = (fetchContent) => () => {
 
   return (
     <ul className="gallery">
-      {items.map(({ name, price, imgPath }, i) => (
+      {items.map(({ name, img }, i) => (
         <li key={i}>
-          <img src={imgPath} alt={`${name} example image`} loading="lazy" />
+          <img src={img} alt={`${name} image`} loading="lazy" />
           <h4>{name}</h4>
-          <p>{numberFormat(price)}</p>
         </li>
       ))}
     </ul>
