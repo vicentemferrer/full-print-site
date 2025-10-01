@@ -51,7 +51,7 @@ import wavesSVG from '@assets/waves-top.svg';
 </header>
 
 <script>
-  import { qs } from "@scripts/utils.mjs";
+  import { qs } from "@lib/utils.ts";
   const desktopMediaQuery = matchMedia("(min-width: 768px)");
 
   function popoverHandler(event) {
@@ -73,12 +73,14 @@ import wavesSVG from '@assets/waves-top.svg';
 
   desktopMediaQuery.addEventListener("change", popoverHandler);
 
-  function closeServicesDetails(event) {
-    if (
-      !event.target.matches(".nav-list details summary") &&
-      !event.target.matches(".nav-list details li a")
-  ) {
-      const details = qs(".nav-list details");
+  function closeServicesDetails(event: MouseEvent) {
+    const target = event.target as HTMLElement
+
+    const isOutside = !target.matches(".nav-list details summary") &&
+      !target.matches(".nav-list details li a")
+
+    if (isOutside) {
+      const details = qs(".nav-list details") as HTMLDetailsElement;
       if (details.open) {
         details.removeAttribute("open");
       }

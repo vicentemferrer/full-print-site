@@ -1,4 +1,4 @@
-export async function convertToJSON(res) {
+export async function convertToJSON(res: Response) {
   try {
     const json = await res.json();
     return json;
@@ -7,19 +7,19 @@ export async function convertToJSON(res) {
   }
 }
 
-export function qs(selector, parent = document) {
-  return parent.querySelector(selector);
+export function qs(selector: string, parent = document) {
+  return parent.querySelector(selector) as HTMLElement;
 }
 
 export function numberFormat(
-  input,
+  input: number,
   language = "es-CL",
-  settings = { currency: "CLP", style: "currency" },
+  settings: Intl.NumberFormatOptions = { currency: "CLP", style: "currency" },
 ) {
   return new Intl.NumberFormat(language, settings).format(input);
 }
 
-export function loadImage(url) {
+export function loadImage(url: string) {
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.onload = () => resolve(true);

@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import "./Gallery.css";
 
-import { numberFormat, loadImage } from "@scripts/utils.mjs";
+import { loadImage } from "@lib/utils.ts";
+import type { Offering } from "@lib/definitions.ts";
 
-async function filterGallery(list) {
+async function filterGallery(list: Offering[]) {
   const galleryPromises = list.map(async (item) => {
     const path = item.img;
 
@@ -19,8 +20,8 @@ async function filterGallery(list) {
   const gallery = await Promise.allSettled(galleryPromises);
 
   return gallery
-    .filter(({ status, value }) => status === "fulfilled" && value !== null)
-    .map((promise) => promise.value);
+    .filter((result) => result.status === "fulfilled" && result.value !== null)
+    .map((promise: PromiseFulfilledResult<Offering>) => promise.value);
 }
 
 const Gallery = (fetchContent) => () => {

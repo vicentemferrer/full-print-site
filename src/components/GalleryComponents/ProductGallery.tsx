@@ -1,5 +1,6 @@
-import Gallery from "./gallery/Gallery.jsx";
-import ExternalServices from "@scripts/ExternalServices.mjs";
+import Gallery from "./gallery/Gallery.tsx";
+
+import ExternalServices from "@lib/ExternalServices.ts";
 
 async function fetchContent(setProducts, filterList) {
   const dataSource = new ExternalServices();
