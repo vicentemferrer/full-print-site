@@ -1,0 +1,22 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Gallery from "@components/Gallery";
+---
+
+<Layout subtitle='Búsqueda'>
+  <main>
+    <h2>Búsqueda</h2>
+    <Gallery client:only />
+  </main>
+</Layout>
+
+<style>
+  main h2 {
+    grid-column: 2 / 3;
+
+    text-align: center;
+    margin-block: 2rem;
+
+    font-size: xx-large;
+  }
+</style>
