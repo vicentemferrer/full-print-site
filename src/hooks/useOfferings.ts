@@ -1,7 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useStore } from "@nanostores/react";
 
 import ExternalServices from "@lib/ExternalServices";
+import type { Offering, Service } from "@lib/definitions";
+
+import { useFilters } from "./useFilters";
 
 import { $items } from "@store/OfferingStore";
 

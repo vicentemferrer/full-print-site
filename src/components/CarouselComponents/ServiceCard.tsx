@@ -6,7 +6,7 @@ function ServiceCard({ props }: { props: Link }) {
   const { icon, title, url } = props;
 
   return (
-    <a href="#">
+    <a href={url}>
       <article className="service-card">
         <i className={`fi fi-br-${icon}`}></i>
         <h3>{title}</h3>

@@ -1,4 +1,10 @@
-export type ServiceCategory = "docs" | "pict" | "mktg" | "dsgn" | "misc";
+export type ServiceCategory =
+  | "docs"
+  | "pict"
+  | "mktg"
+  | "dsgn"
+  | "misc"
+  | "all";
 
 export interface ServiceFormat {
   type: string;
@@ -46,6 +52,10 @@ export function filterServicesByCategories(
   return services.filter((service) =>
     categories.some((cat) => service.category.includes(cat)),
   );
+}
+
+export interface Filters {
+  category: ServiceCategory;
 }
 
 type Icon = {

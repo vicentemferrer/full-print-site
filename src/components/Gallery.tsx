@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import { getParams, loadImage } from "@lib/utils.ts";
 import type { Offering } from "@lib/definitions.ts";
 
+import { useFilterSync } from "@hooks/useFilterSync";
 import { useOfferings } from "@hooks/useOfferings";
+import { useFilters } from "@hooks/useFilters";
 
 import "./Gallery.css";
 
@@ -27,14 +29,16 @@ async function filterStables(list: Offering[]) {
 }
 
 export default function Gallery() {
+  useFilterSync();
   const [stableItems, setStableItems] = useState<Offering[]>([] as Offering[]);
 
   const variant = getParams("v");
   const { items } = useOfferings(variant);
+  const filteredItems = useFilters(variant, items);
 
   useEffect(() => {
     (async () => {
-      const filtered = await filterStables(items);
+      const filtered = await filterStables(filteredItems);
       setStableItems(filtered);
     })();
   }, [items]);
