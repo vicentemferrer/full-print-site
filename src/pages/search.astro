@@ -1,22 +1,32 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import Filters from "@components/Filters";
 import Gallery from "@components/Gallery";
 ---
 
 <Layout subtitle='Búsqueda'>
   <main>
-    <h2>Búsqueda</h2>
-    <Gallery client:only />
+    <!-- <h2>Búsqueda</h2> -->
+    <section>
+      <Filters client:only />
+    </section>
+    <section>
+      <Gallery client:only />
+    </section>
   </main>
 </Layout>
 
 <style>
-  main h2 {
+  /* main h2 {
     grid-column: 2 / 3;
 
     text-align: center;
     margin-block: 2rem;
 
     font-size: xx-large;
+  } */
+
+  section {
+    grid-column: 2 / 3;
   }
 </style>

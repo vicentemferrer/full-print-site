@@ -12,10 +12,9 @@ export function useFilters(variant: string, data: Offering[]) {
     return data.filter((item: Offering & Service) => {
       let matchesCategory = filters.category === "all";
 
-      // const matchesSearch =
-      //   filters.search === '' ||
-      //   item.name.toLowerCase().includes(filters.search.toLowerCase()) ||
-      //   item.description.toLowerCase().includes(filters.search.toLowerCase());
+      const matchesSearch =
+        filters.query === "" ||
+        item.name.toLowerCase().includes(filters.query.toLowerCase());
 
       if (variant === "s") {
         matchesCategory =
@@ -23,7 +22,7 @@ export function useFilters(variant: string, data: Offering[]) {
           item.category.includes(filters.category);
       }
 
-      return matchesCategory;
+      return matchesSearch && matchesCategory;
     });
   }, [data, filters]);
 

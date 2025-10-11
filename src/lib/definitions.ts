@@ -56,6 +56,7 @@ export function filterServicesByCategories(
 
 export interface Filters {
   category: ServiceCategory;
+  query: string;
 }
 
 type Icon = {
@@ -69,4 +70,9 @@ interface Link {
   url: string;
 }
 
-export type { Link };
+interface CategoryOption {
+  name: string;
+  id: ServiceCategory;
+}
+
+export type { Link, CategoryOption };

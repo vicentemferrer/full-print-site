@@ -1,4 +1,4 @@
-import type { Link } from "./definitions.ts";
+import type { CategoryOption, Link } from "./definitions.ts";
 
 const carousel: Link[] = [
   {
@@ -109,4 +109,31 @@ const social: Link[] = [
   },
 ];
 
-export { carousel, footer, support, contact, social };
+const categoryOptions: CategoryOption[] = [
+  {
+    name: "Todas",
+    id: "all",
+  },
+  {
+    name: "Documentos",
+    id: "docs",
+  },
+  {
+    name: "Imágenes",
+    id: "pict",
+  },
+  {
+    name: "Publicidad",
+    id: "mktg",
+  },
+  {
+    name: "Diseño",
+    id: "dsgn",
+  },
+  {
+    name: "Otros",
+    id: "misc",
+  },
+];
+
+export { carousel, footer, support, contact, social, categoryOptions };
