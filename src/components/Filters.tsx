@@ -9,11 +9,13 @@ import { useFilterSync } from "@hooks/useFilterSync";
 
 import { $filters, setCategory, setQuery } from "@store/OfferingStore";
 
-export default function Filters() {
-  useFilterSync();
-  const filters = useStore($filters);
+import "./Filters.css";
 
+export default function Filters() {
   const variant = getParams("v");
+
+  useFilterSync(variant);
+  const filters = useStore($filters);
 
   function handleCategoryChange(event: ChangeEvent<HTMLSelectElement>) {
     setCategory(event.target.value as ServiceCategory);
@@ -40,7 +42,13 @@ export default function Filters() {
         </select>
       </label>
       <label>
-        <input type="text" name="search" onChange={handleSearchChange} />
+        <input
+          type="text"
+          name="search"
+          placeholder="Buscar"
+          onChange={handleSearchChange}
+        />
+        <i className="fi fi-br-search"></i>
       </label>
     </form>
   );

@@ -6,14 +6,14 @@ import type { ServiceCategory } from "@lib/definitions";
 
 import { $filters, setCategory, setQuery } from "@store/OfferingStore.ts";
 
-export function useFilterSync() {
+export function useFilterSync(variant: string) {
   const filters = useStore($filters);
 
   useEffect(() => {
     const categoryFromUrl = getParams("sc");
     const queryFromUrl = getParams("q");
 
-    if (categoryFromUrl) {
+    if (categoryFromUrl && variant === "s") {
       setCategory(categoryFromUrl as ServiceCategory);
     }
 
@@ -25,7 +25,7 @@ export function useFilterSync() {
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
 
-    if (filters.category !== "all") {
+    if (filters.category !== "all" && variant === "s") {
       params.set("sc", filters.category);
     } else {
       params.delete("sc");
