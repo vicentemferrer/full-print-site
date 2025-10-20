@@ -1,0 +1,110 @@
+form {
+  padding: 1rem;
+
+  margin-top: 1rem;
+  margin-inline: 1rem;
+
+  background-color: var(--form-background-color);
+
+  border-radius: 0.25rem;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+form label,
+form input,
+form select {
+  display: block;
+}
+
+form input,
+form select {
+  font-size: large;
+  width: 100%;
+  min-width: 20rem;
+}
+
+form label {
+  position: relative;
+  font-size: small;
+}
+
+form label select {
+  margin-top: 0.2rem;
+}
+
+form label input,
+form label select {
+  color: var(--text-on-color);
+  background-color: var(--input-background-color);
+
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+
+  padding: 0.25rem;
+
+  padding-right: 1.7rem;
+
+  &:focus {
+    border-color: white;
+  }
+}
+
+form label input {
+  padding-block: 0.268rem;
+}
+
+form label i {
+  position: absolute;
+
+  top: 0.3rem;
+  right: 0.25rem;
+
+  font-size: large;
+}
+
+form label > *:disabled {
+  color: grey;
+}
+
+@media (min-width: 768px) {
+  form {
+    padding-right: 5rem;
+
+    margin-inline: 5rem;
+
+    flex-direction: row;
+    align-items: end;
+  }
+
+  form label:has(input) {
+    flex-grow: 1;
+  }
+
+  form input {
+    min-width: 0;
+  }
+
+  form select {
+    width: fit-content;
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  form {
+    padding-right: 0;
+  }
+
+  form label:has(input) {
+    flex-grow: 0;
+  }
+
+  form input {
+    min-width: 30rem;
+  }
+}

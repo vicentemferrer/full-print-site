@@ -1,38 +1,32 @@
 [
   {
     "name": "Resma Hoja Carta x250",
-    "description": "Papel bond de 72g (250 hojas)",
-    "price": 4690,
-    "imgPath": "/images/productos/carta-1.webp"
+    "description": "Papel bond de alta calidad de 72g, ideal para impresiones diarias. Formato carta estándar con 250 hojas, perfecto para uso doméstico u oficinas pequeñas.",
+    "img": "/images/productos/carta-1.webp"
   },
   {
     "name": "Resma Hoja Carta x500",
-    "description": "Papel bond de 72g (500 hojas)",
-    "price": 8290,
-    "imgPath": "/images/productos/carta-2.webp"
+    "description": "Resma completa de papel bond de 72g en formato carta. Con 500 hojas de excelente calidad, es la opción más económica para alto volumen de impresión.",
+    "img": "/images/productos/carta-2.webp"
   },
   {
     "name": "Resma Hoja Oficio x500",
-    "description": "Papel bond de 72g (500 hojas)",
-    "price": 9690,
-    "imgPath": "/images/productos/oficio.webp"
+    "description": "Papel bond de 72g en formato oficio (más largo que carta). Resma de 500 hojas, ideal para documentos legales, contratos y uso profesional.",
+    "img": "/images/productos/oficio.webp"
   },
   {
     "name": "Sobres",
-    "description": "Tamaño carta, americano y más",
-    "price": 300,
-    "imgPath": "/images/productos/sobre.webp"
+    "description": "Sobres de diferentes tamaños disponibles: carta, americano y más formatos. Ideales para correspondencia, invitaciones y documentos oficiales.",
+    "img": "/images/productos/sobre.webp"
   },
   {
     "name": "Fundas Transparentes",
-    "description": "Tamaño carta y oficio",
-    "price": 200,
-    "imgPath": "/images/productos/funda.webp"
+    "description": "Fundas plásticas transparentes para proteger tus documentos. Disponibles en tamaño carta y oficio, perfectas para presentaciones y archivos.",
+    "img": "/images/productos/funda.webp"
   },
   {
     "name": "Carpetas Plastificadas",
-    "description": "",
-    "price": 900,
-    "imgPath": "/images/productos/carpeta.webp"
+    "description": "Carpetas resistentes con acabado plastificado. Durables y de presentación profesional, ideales para organizar documentos importantes.",
+    "img": "/images/productos/carpeta.webp"
   }
 ]

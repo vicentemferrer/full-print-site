@@ -1,0 +1,22 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Filters from "@components/Filters";
+import Gallery from "@components/Gallery";
+---
+
+<Layout subtitle='Búsqueda'>
+  <main>
+    <section>
+      <Filters client:only />
+    </section>
+    <section>
+      <Gallery client:only />
+    </section>
+  </main>
+</Layout>
+
+<style>
+  section {
+    grid-column: 2 / 3;
+  }
+</style>

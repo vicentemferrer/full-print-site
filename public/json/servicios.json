@@ -1,296 +1,286 @@
 [
   {
-    "category": "docs",
-    "name": "Papel Bond Carta",
-    "description": "Tenemos descuento desde las 20 unidades",
-    "price": 200,
-    "imgPath": "/images/servicios/documentos/base.webp"
+    "category": ["docs"],
+    "name": "Impresión de Documentos",
+    "description": "Servicio de impresión en papel bond de alta calidad en múltiples formatos. Descuentos especiales desde las 20 unidades, ideal para documentos, tareas y uso profesional.",
+    "img": "/images/servicios/documentos/base.webp",
+    "formats": [
+      {
+        "type": "Carta",
+        "width": 21.59,
+        "height": 27.94,
+        "unit": "cm",
+        "description": "Formato estándar para documentos, tareas e impresiones generales de uso diario.",
+        "img": "/images/servicios/documentos/carta.webp"
+      },
+      {
+        "type": "Oficio",
+        "width": 21.59,
+        "height": 33.02,
+        "unit": "cm",
+        "description": "Formato extendido, perfecto para documentos legales, contratos y uso oficial.",
+        "img": "/images/servicios/documentos/oficio.webp"
+      },
+      {
+        "type": "A3",
+        "width": 29.7,
+        "height": 42,
+        "unit": "cm",
+        "description": "Formato grande ideal para planos, pósters, presentaciones y diseños que requieren mayor tamaño.",
+        "img": "/images/servicios/documentos/a3.webp"
+      },
+      {
+        "type": "A6",
+        "width": 10.5,
+        "height": 14.8,
+        "unit": "cm",
+        "description": "Formato compacto perfecto para tarjetas, notas, cupones y material de bolsillo.",
+        "img": "/images/servicios/documentos/a6.webp"
+      }
+    ]
   },
   {
-    "category": "docs",
-    "name": "Papel Bond Oficio",
-    "description": "Tenemos descuento desde las 20 unidades",
-    "price": 250,
-    "imgPath": "/images/servicios/documentos/base.webp"
-  },
-  {
-    "category": "docs",
-    "name": "Papel Bond A3",
-    "description": "Tenemos descuento desde las 20 unidades",
-    "price": 1900,
-    "imgPath": "/images/servicios/documentos/base.webp"
-  },
-  {
-    "category": "docs",
-    "name": "Papel Bond A6",
-    "description": "Tenemos descuento desde las 20 unidades",
-    "price": 100,
-    "imgPath": "/images/servicios/documentos/base.webp"
-  },
-  {
-    "category": "docs",
+    "category": ["docs"],
     "name": "Fotocopias",
-    "description": "Tenemos descuento desde las 20 unidades",
-    "price": 150,
-    "imgPath": "/images/servicios/documentos/base.webp"
+    "description": "Servicio de fotocopiado rápido y de calidad. Descuentos especiales desde las 20 copias, ideal para estudiantes y oficinas.",
+    "img": "/images/servicios/documentos/base.webp"
   },
   {
-    "category": "docs",
+    "category": ["docs", "misc"],
     "name": "Scanner",
-    "description": "Tenemos descuento desde las 20 unidades",
-    "price": 300,
-    "imgPath": "/images/servicios/otros/scanner.webp"
+    "description": "Digitaliza tus documentos con nuestro servicio de escaneo de alta resolución. Descuentos disponibles desde las 20 unidades.",
+    "img": "/images/servicios/otros/scanner.webp"
   },
   {
-    "category": "pict",
-    "name": "10×15cm",
-    "description": "$4.500 con cuadro",
-    "price": 1000,
-    "imgPath": "/images/servicios/fotografia/small.webp"
+    "category": ["pict"],
+    "name": "Impresión de Imágenes",
+    "description": "Impresión fotográfica profesional en múltiples tamaños con acabados de alta calidad. Perfectas para álbumes, decoración y recuerdos. Opción de marco disponible para todos los tamaños.",
+    "img": "/images/servicios/fotografia/base.webp",
+    "formats": [
+      {
+        "type": "10×15cm",
+        "width": 10,
+        "height": 15,
+        "unit": "cm",
+        "description": "Tamaño estándar perfecto para álbumes y recuerdos. Marco disponible por solo $4.500 adicionales.",
+        "img": "/images/servicios/fotografia/small.webp"
+      },
+      {
+        "type": "13×18cm",
+        "width": 13,
+        "height": 18,
+        "unit": "cm",
+        "description": "Tamaño medio ideal para portaretratos y exhibición. Añade un elegante marco por solo $5.500 adicionales.",
+        "img": "/images/servicios/fotografia/medium.webp"
+      },
+      {
+        "type": "21×30cm",
+        "width": 21,
+        "height": 30,
+        "unit": "cm",
+        "description": "Tamaño grande perfecto para decoración y cuadros destacados. Marco incluido por $8.900 adicionales.",
+        "img": "/images/servicios/fotografia/large.webp"
+      },
+      {
+        "type": "30×40cm",
+        "width": 30,
+        "height": 40,
+        "unit": "cm",
+        "description": "Gran formato con impresión profesional, ideal para decoración de interiores. Marco disponible por $12.500 adicionales.",
+        "img": "/images/servicios/fotografia/xlarge.webp"
+      }
+    ]
   },
   {
-    "category": "pict",
-    "name": "13×18cm",
-    "description": "$5.500 con cuadro",
-    "price": 2000,
-    "imgPath": "/images/servicios/fotografia/medium.webp"
-  },
-  {
-    "category": "pict",
-    "name": "21×30cm",
-    "description": "$8.900 con cuadro",
-    "price": 4000,
-    "imgPath": "/images/servicios/fotografia/large.webp"
-  },
-  {
-    "category": "pict",
-    "name": "30×40cm",
-    "description": "$12.500 con cuadro",
-    "price": 6000,
-    "imgPath": "/images/servicios/fotografia/xlarge.webp"
-  },
-  {
-    "category": "pict",
+    "category": ["pict"],
     "name": "Restauración",
-    "description": "Tenemos descuento al imprimir la foto restaurada",
-    "price": 1200,
-    "imgPath": "/images/servicios/fotografia/restauracion.webp"
+    "description": "Restauramos tus fotos antiguas o dañadas, devolviéndoles vida y nitidez. Descuento especial si decides imprimir la foto restaurada con nosotros.",
+    "img": "/images/servicios/fotografia/restauracion.webp"
   },
   {
-    "category": "pict",
+    "category": ["pict"],
     "name": "Mejora de Calidad",
-    "description": "Tenemos descuento al imprimirla",
-    "price": 5000,
-    "imgPath": "/images/servicios/fotografia/mejora.webp"
+    "description": "Mejoramos la resolución, nitidez y color de tus fotografías con tecnología profesional. Descuento al imprimirla directamente con nosotros.",
+    "img": "/images/servicios/fotografia/mejora.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Tarjetas de Presentación",
-    "description": "A mayor cantidad, es menor el precio unitario",
-    "price": 13500,
-    "imgPath": "/images/servicios/herramientas/tarjeta.webp"
+    "description": "Tarjetas profesionales de alta calidad que causan excelente primera impresión. A mayor cantidad de tarjetas, menor es el precio unitario.",
+    "img": "/images/servicios/herramientas/tarjeta.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Flyers",
-    "description": "A mayor cantidad, es menor el precio unitario",
-    "price": 19990,
-    "imgPath": "/images/servicios/herramientas/flyer.webp"
+    "description": "Volantes publicitarios llamativos y efectivos para promocionar tu negocio o evento. Aprovecha el descuento por volumen: a más cantidad, mejor precio.",
+    "img": "/images/servicios/herramientas/flyer.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Posters",
-    "description": "Aprovecha la promoción poster + diseño del poster",
-    "price": 6000,
-    "imgPath": "/images/servicios/herramientas/poster.webp"
+    "description": "Pósters de impacto visual para publicidad, eventos o decoración. Aprovecha nuestra promoción especial: poster + diseño del poster.",
+    "img": "/images/servicios/herramientas/poster.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Stickers",
-    "description": "Hacemos de todos los tamaños y medidas",
-    "price": 5000,
-    "imgPath": "/images/servicios/herramientas/sticker.webp"
+    "description": "Adhesivos personalizados de todos los tamaños y formas. Perfectos para branding, decoración o promoción de tu marca.",
+    "img": "/images/servicios/herramientas/sticker.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Diplomas",
-    "description": "Te hacemos un precio al diseñarlo con nosotros",
-    "price": 4000,
-    "imgPath": "/images/servicios/herramientas/diploma.webp"
+    "description": "Diplomas y certificados con impresión de calidad premium. Te hacemos un precio especial si diseñamos el diploma junto contigo.",
+    "img": "/images/servicios/herramientas/diploma.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Invitaciones",
-    "description": "Aprovecha la promo de invitación + diseño + sobre",
-    "price": 4000,
-    "imgPath": "/images/servicios/herramientas/invitacion.webp"
+    "description": "Invitaciones elegantes para eventos, bodas, cumpleaños y celebraciones. Promoción especial: invitación + diseño + sobre incluido.",
+    "img": "/images/servicios/herramientas/invitacion.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Calendarios",
-    "description": "También podemos mejorar la calidad de tu foto",
-    "price": 2500,
-    "imgPath": "/images/servicios/herramientas/calendario.webp"
+    "description": "Calendarios personalizados con tus fotos favoritas. También ofrecemos servicio de mejora de calidad de las fotografías que utilices.",
+    "img": "/images/servicios/herramientas/calendario.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Marca Páginas",
-    "description": "Tamaño y forma totalmente personalizado",
-    "price": 2000,
-    "imgPath": "/images/servicios/herramientas/marca-pagina.webp"
+    "description": "Separadores de libros totalmente personalizados. Elige el tamaño y forma que prefieras para un producto único y funcional.",
+    "img": "/images/servicios/herramientas/marca-pagina.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Imanes",
-    "description": "Tamaño y forma totalmente personalizado",
-    "price": 5000,
-    "imgPath": "/images/servicios/herramientas/iman.webp"
+    "description": "Imanes publicitarios personalizados con el diseño que necesites. Tamaño y forma completamente a tu medida para máxima visibilidad.",
+    "img": "/images/servicios/herramientas/iman.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Pendones",
-    "description": "Todos los tamaños, también con roller si lo necesita",
-    "price": 15000,
-    "imgPath": "/images/servicios/herramientas/pendon.webp"
+    "description": "Pendones publicitarios de todos los tamaños para eventos y negocios. También disponibles con sistema roller para fácil transporte e instalación.",
+    "img": "/images/servicios/herramientas/pendon.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Letreros PVC",
-    "description": "Cotiza tu letrero con base de madera y aprovecha la promo letrero + diseño",
-    "price": 25000,
-    "imgPath": "/images/servicios/herramientas/letrero-pvc.webp"
+    "description": "Letreros resistentes en PVC de alta durabilidad. Cotiza tu letrero con base de madera y aprovecha la promoción letrero + diseño profesional.",
+    "img": "/images/servicios/herramientas/letrero-pvc.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Adhesivos PVC",
-    "description": "También hacemos troquelados",
-    "price": 25900,
-    "imgPath": "/images/servicios/herramientas/adhesivo-pvc.webp"
+    "description": "Adhesivos duraderos en PVC para exteriores e interiores. También realizamos trabajos troquelados para formas especiales y personalizadas.",
+    "img": "/images/servicios/herramientas/adhesivo-pvc.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Windows Vision",
-    "description": "Cotiza la instalación del windows vision",
-    "price": 20000,
-    "imgPath": "/images/servicios/herramientas/window-vision.webp"
+    "description": "Vinilo microperforado para ventanas que permite visibilidad desde dentro. Cotiza con nosotros la instalación profesional del windows vision.",
+    "img": "/images/servicios/herramientas/window-vision.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Vinilo de Corte",
-    "description": "También podemos diseñarlo",
-    "price": 5000,
-    "imgPath": "/images/servicios/herramientas/vinilo.webp"
+    "description": "Vinilo adhesivo cortado en la forma que necesites para rotulación y decoración. También ofrecemos servicio de diseño personalizado.",
+    "img": "/images/servicios/herramientas/vinilo.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Letreros Luminosos",
-    "description": "Cotiza tu instalación del letrero",
-    "price": 85000,
-    "imgPath": "/images/servicios/herramientas/letrero-luminoso.webp"
+    "description": "Letreros con iluminación LED de alto impacto visual, perfectos para fachadas de negocios. Cotiza la instalación profesional del letrero.",
+    "img": "/images/servicios/herramientas/letrero-luminoso.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Letreros Volumétricos",
-    "description": "Podemos diseñarlo e instalarlo",
-    "price": 200000,
-    "imgPath": "/images/servicios/herramientas/letrero-volumetrico.webp"
+    "description": "Letras corporales tridimensionales de alto impacto para fachadas corporativas. Ofrecemos diseño e instalación profesional del letrero.",
+    "img": "/images/servicios/herramientas/letrero-volumetrico.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Letreros Sintra",
-    "description": "Cotiza + el diseño del letrero",
-    "price": 30000,
-    "imgPath": "/images/servicios/herramientas/letrero-sintra.webp"
+    "description": "Letreros en material Sintra, ligeros y resistentes, ideales para interiores y exteriores. Cotiza junto con el diseño personalizado del letrero.",
+    "img": "/images/servicios/herramientas/letrero-sintra.webp"
   },
   {
-    "category": "mktg",
+    "category": ["mktg"],
     "name": "Palomas Publicitarias",
-    "description": "Se la entregamos a domicilio también",
-    "price": 50000,
-    "imgPath": "/images/servicios/herramientas/paloma-publicitaria.webp"
+    "description": "Estructuras publicitarias tipo paloma para máxima visibilidad en la vía pública. Incluimos servicio de entrega e instalación a domicilio.",
+    "img": "/images/servicios/herramientas/paloma-publicitaria.webp"
   },
   {
-    "category": "dsgn",
+    "category": ["dsgn"],
     "name": "Creación de Logo",
-    "description": "Tenemos descuento al hacer un letrero con el logo",
-    "price": 20000,
-    "imgPath": "/images/servicios/diseno/logo.webp"
+    "description": "Diseño profesional de logotipo único para tu marca o negocio. Descuento especial al hacer un letrero o material publicitario con el logo creado.",
+    "img": "/images/servicios/diseno/logo.webp"
   },
   {
-    "category": "dsgn",
+    "category": ["dsgn", "mktg"],
     "name": "Letreros",
-    "description": "Hacemos Pack + instalación y confección del letrero",
-    "price": 20000,
-    "imgPath": "/images/servicios/diseno/letreros.webp"
+    "description": "Diseño completo para letreros de negocios y publicidad. Ofrecemos packs especiales que incluyen diseño + confección + instalación del letrero.",
+    "img": "/images/servicios/diseno/letreros.webp"
   },
   {
-    "category": "dsgn",
+    "category": ["dsgn"],
     "name": "Certificados",
-    "description": "Aprovecha la promoción de diseño de certificado + impresión del certificado",
-    "price": 6000,
-    "imgPath": "/images/servicios/herramientas/diploma.webp"
+    "description": "Diseño profesional de certificados y diplomas personalizados. Promoción especial: diseño de certificado + impresión del certificado en combo.",
+    "img": "/images/servicios/herramientas/diploma.webp"
   },
   {
-    "category": "dsgn",
+    "category": ["dsgn", "mktg"],
     "name": "Tarjetas de Presentación",
-    "description": "Diseñamos una o dos caras y también las imprimimos",
-    "price": 5000,
-    "imgPath": "/images/servicios/herramientas/tarjeta.webp"
+    "description": "Diseño profesional de tarjetas de presentación a una o dos caras. También nos encargamos de la impresión con acabados de calidad.",
+    "img": "/images/servicios/herramientas/tarjeta.webp"
   },
   {
-    "category": "dsgn",
+    "category": ["dsgn", "mktg"],
     "name": "Flyers",
-    "description": "Aprovecha la promo de diseño + impresión flyers",
-    "price": 12000,
-    "imgPath": "/images/servicios/herramientas/flyer.webp"
+    "description": "Diseño creativo y llamativo de volantes publicitarios. Aprovecha la promoción especial: diseño + impresión de flyers en un solo paquete.",
+    "img": "/images/servicios/herramientas/flyer.webp"
   },
   {
-    "category": "dsgn",
+    "category": ["dsgn", "mktg"],
     "name": "Afiches",
-    "description": "Afiche, banner y mucho más",
-    "price": 5000,
-    "imgPath": "/images/servicios/diseno/afiches.webp"
+    "description": "Diseño de afiches, banners y material promocional de impacto. Creamos piezas visuales que captan la atención de tu público objetivo.",
+    "img": "/images/servicios/diseno/afiches.webp"
   },
   {
-    "category": "misc",
+    "category": ["misc"],
     "name": "Anillado",
-    "description": "Aprovecha la promo impresión de libro + anillado",
-    "price": 3000,
-    "imgPath": "/images/servicios/otros/anillado.webp"
+    "description": "Servicio de encuadernación con anillado de documentos, tesis, manuales y libros. Promoción especial: impresión de libro + anillado en combo.",
+    "img": "/images/servicios/otros/anillado.webp"
   },
   {
-    "category": "misc",
+    "category": ["docs", "misc"],
     "name": "Scanner",
-    "description": "Tenemos descuento desde las 20 unidades",
-    "price": 300,
-    "imgPath": "/images/servicios/otros/scanner.webp"
+    "description": "Servicio de digitalización de documentos, fotos y archivos con escaneo de alta calidad. Descuentos especiales desde las 20 unidades.",
+    "img": "/images/servicios/otros/scanner.webp"
   },
   {
-    "category": "misc",
+    "category": ["misc"],
     "name": "Trámites en línea",
-    "description": "Desde certificados en línea a postulación a beneficio",
-    "price": 2000,
-    "imgPath": "/images/servicios/otros/tramites.webp"
+    "description": "Te ayudamos con gestiones en línea: certificados digitales, postulación a beneficios estatales, pagos online y más trámites administrativos.",
+    "img": "/images/servicios/otros/tramites.webp"
   },
   {
-    "category": "misc",
+    "category": ["misc"],
     "name": "Redacción de Documentos",
-    "description": "Desde curriculum hasta cotizaciones",
-    "price": 2000,
-    "imgPath": "/images/servicios/otros/redaccion.webp"
+    "description": "Servicio profesional de redacción y elaboración de documentos: currículum vitae, cartas, cotizaciones, informes y más documentos oficiales.",
+    "img": "/images/servicios/otros/redaccion.webp"
   },
   {
-    "category": "misc",
+    "category": ["misc", "mktg"],
     "name": "Código QR",
-    "description": "Para menus, redes sociales y mucho más",
-    "price": 5000,
-    "imgPath": "/images/servicios/otros/qr.webp"
+    "description": "Creación de códigos QR personalizados para menús digitales, redes sociales, links de contacto, páginas web y mucho más.",
+    "img": "/images/servicios/otros/qr.webp"
   },
   {
-    "category": "misc",
+    "category": ["misc"],
     "name": "Mantenimiento de Impresoras",
-    "description": "Incluye limpieza de la impresora sin costo extra",
-    "price": 20000,
-    "imgPath": "/images/servicios/otros/mantenimiento.webp"
+    "description": "Servicio técnico completo de mantenimiento para impresoras de todas las marcas. Incluye limpieza profunda de la impresora sin costo adicional.",
+    "img": "/images/servicios/otros/mantenimiento.webp"
   }
 ]

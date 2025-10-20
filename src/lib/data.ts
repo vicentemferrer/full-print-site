@@ -1,30 +1,30 @@
-import type { Link } from "./definitions.ts";
+import type { CategoryOption, Link } from "./definitions.ts";
 
 const carousel: Link[] = [
   {
     icon: "document",
-    title: "Impresión de Documentos",
-    url: "/servicios/documentos",
+    title: "Documentos",
+    url: "/search?v=s&sc=docs",
   },
   {
     icon: "picture",
-    title: "Impresión de Imágenes",
-    url: "/servicios/imagenes",
+    title: "Imágenes",
+    url: "/search?v=s&sc=pict",
   },
   {
     icon: "lightbulb-on",
-    title: "Herramientas de Publicidad",
-    url: "/servicios/publicidad",
+    title: "Publicidad",
+    url: "/search?v=s&sc=mktg",
   },
   {
     icon: "customize-edit",
     title: "Diseño Gráfico",
-    url: "/servicios/diseno",
+    url: "/search?v=s&sc=dsgn",
   },
   {
     icon: "square-plus",
     title: "Otros Servicios",
-    url: "/servicios/otros",
+    url: "/search?v=s&sc=misc",
   },
 ];
 
@@ -109,4 +109,31 @@ const social: Link[] = [
   },
 ];
 
-export { carousel, footer, support, contact, social };
+const categoryOptions: CategoryOption[] = [
+  {
+    name: "Todas",
+    id: "all",
+  },
+  {
+    name: "Documentos",
+    id: "docs",
+  },
+  {
+    name: "Imágenes",
+    id: "pict",
+  },
+  {
+    name: "Publicidad",
+    id: "mktg",
+  },
+  {
+    name: "Diseño",
+    id: "dsgn",
+  },
+  {
+    name: "Otros",
+    id: "misc",
+  },
+];
+
+export { carousel, footer, support, contact, social, categoryOptions };
