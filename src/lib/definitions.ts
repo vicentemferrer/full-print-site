@@ -16,6 +16,7 @@ export interface ServiceFormat {
 }
 
 export interface Offering {
+  id: string;
   name: string;
   description: string;
   img: string;

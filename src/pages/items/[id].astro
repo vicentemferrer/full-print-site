@@ -1,0 +1,21 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+import type { Offering } from "@lib/definitions";
+
+import services from "../../../public/json/servicios.json"
+import products from "../../../public/json/productos.json"
+
+export function getStaticPaths() {
+  return [...services, ...products].map((item: Offering) => ({ params: { id: item.id }, props: { item } }))
+};
+
+const { id } = Astro.params
+const { item } = Astro.props
+---
+
+<Layout subtitle={item.name}>
+  <main>
+
+  </main>
+</Layout>

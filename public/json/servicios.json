@@ -1,5 +1,6 @@
 [
   {
+    "id": "a3f5e7d9-2b4c-4e8a-9f1d-3c5b7a9e2f4d",
     "category": ["docs"],
     "name": "Impresión de Documentos",
     "description": "Servicio de impresión en papel bond de alta calidad en múltiples formatos. Descuentos especiales desde las 20 unidades, ideal para documentos, tareas y uso profesional.",
@@ -40,18 +41,21 @@
     ]
   },
   {
+    "id": "b8d2f6a4-7e3c-4b9a-8d2f-6a4c9e1b5d7a",
     "category": ["docs"],
     "name": "Fotocopias",
     "description": "Servicio de fotocopiado rápido y de calidad. Descuentos especiales desde las 20 copias, ideal para estudiantes y oficinas.",
     "img": "/images/servicios/documentos/base.webp"
   },
   {
+    "id": "c5e8a1b3-9d4f-4c7e-a2b5-8d3f6c9e1a4b",
     "category": ["docs", "misc"],
     "name": "Scanner",
-    "description": "Digitaliza tus documentos con nuestro servicio de escaneo de alta resolución. Descuentos disponibles desde las 20 unidades.",
+    "description": "Digitaliza tus documentos con nuestro servicio de escaneo de alta resolución. Descuentos disponibles desde las 20 unidades. Servicio de digitalización de documentos, fotos y archivos con escaneo de alta calidad.",
     "img": "/images/servicios/otros/scanner.webp"
   },
   {
+    "id": "d9f3b7e2-4a8c-4d6e-b1f4-7c9e2a5d8b3f",
     "category": ["pict"],
     "name": "Impresión de Imágenes",
     "description": "Impresión fotográfica profesional en múltiples tamaños con acabados de alta calidad. Perfectas para álbumes, decoración y recuerdos. Opción de marco disponible para todos los tamaños.",
@@ -92,192 +96,203 @@
     ]
   },
   {
+    "id": "e2a6c8d4-5b9f-4e3a-c7d1-9f4e6b2a8c5d",
     "category": ["pict"],
     "name": "Restauración",
     "description": "Restauramos tus fotos antiguas o dañadas, devolviéndoles vida y nitidez. Descuento especial si decides imprimir la foto restaurada con nosotros.",
     "img": "/images/servicios/fotografia/restauracion.webp"
   },
   {
+    "id": "f7b4d9e1-3c8a-4f6e-d2b8-5e9c3a7f1b4d",
     "category": ["pict"],
     "name": "Mejora de Calidad",
     "description": "Mejoramos la resolución, nitidez y color de tus fotografías con tecnología profesional. Descuento al imprimirla directamente con nosotros.",
     "img": "/images/servicios/fotografia/mejora.webp"
   },
   {
-    "category": ["mktg"],
+    "id": "a1c5e9b3-7d2f-4e8a-b6c9-3f7e1a5d8b2c",
+    "category": ["mktg", "dsgn"],
     "name": "Tarjetas de Presentación",
-    "description": "Tarjetas profesionales de alta calidad que causan excelente primera impresión. A mayor cantidad de tarjetas, menor es el precio unitario.",
+    "description": "Tarjetas profesionales de alta calidad que causan excelente primera impresión. A mayor cantidad de tarjetas, menor es el precio unitario. Diseño profesional de tarjetas de presentación a una o dos caras. También nos encargamos de la impresión con acabados de calidad.",
     "img": "/images/servicios/herramientas/tarjeta.webp"
   },
   {
-    "category": ["mktg"],
+    "id": "b8e2f6a9-4c7d-4b3e-a9d5-7f1c8e4b6a2d",
+    "category": ["mktg", "dsgn"],
     "name": "Flyers",
-    "description": "Volantes publicitarios llamativos y efectivos para promocionar tu negocio o evento. Aprovecha el descuento por volumen: a más cantidad, mejor precio.",
+    "description": "Volantes publicitarios llamativos y efectivos para promocionar tu negocio o evento. Aprovecha el descuento por volumen: a más cantidad, mejor precio. Diseño creativo y llamativo de volantes publicitarios. Aprovecha la promoción especial: diseño + impresión de flyers en un solo paquete.",
     "img": "/images/servicios/herramientas/flyer.webp"
   },
   {
+    "id": "c3d7a9e5-2b8f-4c6e-d1a7-9e4c6b3f8a5d",
     "category": ["mktg"],
     "name": "Posters",
     "description": "Pósters de impacto visual para publicidad, eventos o decoración. Aprovecha nuestra promoción especial: poster + diseño del poster.",
     "img": "/images/servicios/herramientas/poster.webp"
   },
   {
+    "id": "d9e4b7c1-5a3f-4e8d-c2b6-7f9e4a1c8d5b",
     "category": ["mktg"],
     "name": "Stickers",
     "description": "Adhesivos personalizados de todos los tamaños y formas. Perfectos para branding, decoración o promoción de tu marca.",
     "img": "/images/servicios/herramientas/sticker.webp"
   },
   {
+    "id": "e5a8c2f6-9b4d-4e7a-b3d9-6c1f8e5a7b4d",
     "category": ["mktg"],
     "name": "Diplomas",
     "description": "Diplomas y certificados con impresión de calidad premium. Te hacemos un precio especial si diseñamos el diploma junto contigo.",
     "img": "/images/servicios/herramientas/diploma.webp"
   },
   {
+    "id": "f2c6d9a4-7e3b-4f8c-a5d2-9e7b4c1f6a8d",
     "category": ["mktg"],
     "name": "Invitaciones",
     "description": "Invitaciones elegantes para eventos, bodas, cumpleaños y celebraciones. Promoción especial: invitación + diseño + sobre incluido.",
     "img": "/images/servicios/herramientas/invitacion.webp"
   },
   {
+    "id": "a7d3e9b5-4c8f-4e2a-b9d6-3f7c1e5a8b4d",
     "category": ["mktg"],
     "name": "Calendarios",
     "description": "Calendarios personalizados con tus fotos favoritas. También ofrecemos servicio de mejora de calidad de las fotografías que utilices.",
     "img": "/images/servicios/herramientas/calendario.webp"
   },
   {
+    "id": "b4e8c6a2-9d5f-4b7e-c3a8-6e2f9b1d5a7c",
     "category": ["mktg"],
     "name": "Marca Páginas",
     "description": "Separadores de libros totalmente personalizados. Elige el tamaño y forma que prefieras para un producto único y funcional.",
     "img": "/images/servicios/herramientas/marca-pagina.webp"
   },
   {
+    "id": "c9f2d7a5-3e8b-4c6f-d1a4-8e9c5b2f7a3d",
     "category": ["mktg"],
     "name": "Imanes",
     "description": "Imanes publicitarios personalizados con el diseño que necesites. Tamaño y forma completamente a tu medida para máxima visibilidad.",
     "img": "/images/servicios/herramientas/iman.webp"
   },
   {
+    "id": "d5a8e3c7-6b9f-4e2d-a7c4-9f1e6b3d8a5c",
     "category": ["mktg"],
     "name": "Pendones",
     "description": "Pendones publicitarios de todos los tamaños para eventos y negocios. También disponibles con sistema roller para fácil transporte e instalación.",
     "img": "/images/servicios/herramientas/pendon.webp"
   },
   {
+    "id": "e1c6b9d4-7a3f-4e8c-b2d5-8f4e9a6c1b7d",
     "category": ["mktg"],
     "name": "Letreros PVC",
     "description": "Letreros resistentes en PVC de alta durabilidad. Cotiza tu letrero con base de madera y aprovecha la promoción letrero + diseño profesional.",
     "img": "/images/servicios/herramientas/letrero-pvc.webp"
   },
   {
+    "id": "f8d2a7c5-4e9b-4f3d-c6a9-7e2b5f1d8a4c",
     "category": ["mktg"],
     "name": "Adhesivos PVC",
     "description": "Adhesivos duraderos en PVC para exteriores e interiores. También realizamos trabajos troquelados para formas especiales y personalizadas.",
     "img": "/images/servicios/herramientas/adhesivo-pvc.webp"
   },
   {
+    "id": "a3e7d9b6-5c8f-4e2a-d4b7-9f6c3e1a8b5d",
     "category": ["mktg"],
     "name": "Windows Vision",
     "description": "Vinilo microperforado para ventanas que permite visibilidad desde dentro. Cotiza con nosotros la instalación profesional del windows vision.",
     "img": "/images/servicios/herramientas/window-vision.webp"
   },
   {
+    "id": "b6c9e4a8-7d2f-4b5e-a3c7-8f9e1b4d6a2c",
     "category": ["mktg"],
     "name": "Vinilo de Corte",
     "description": "Vinilo adhesivo cortado en la forma que necesites para rotulación y decoración. También ofrecemos servicio de diseño personalizado.",
     "img": "/images/servicios/herramientas/vinilo.webp"
   },
   {
+    "id": "c2d7f9a5-4e8b-4c6d-b1a8-7f3e9c5b2d6a",
     "category": ["mktg"],
     "name": "Letreros Luminosos",
     "description": "Letreros con iluminación LED de alto impacto visual, perfectos para fachadas de negocios. Cotiza la instalación profesional del letrero.",
     "img": "/images/servicios/herramientas/letrero-luminoso.webp"
   },
   {
+    "id": "d8e3a6c9-5b7f-4e2d-c4a6-9f1e8b7c3a5d",
     "category": ["mktg"],
     "name": "Letreros Volumétricos",
     "description": "Letras corporales tridimensionales de alto impacto para fachadas corporativas. Ofrecemos diseño e instalación profesional del letrero.",
     "img": "/images/servicios/herramientas/letrero-volumetrico.webp"
   },
   {
+    "id": "e4f9b7d2-6a8c-4e3f-d5b9-8e7c2a6f1b4d",
     "category": ["mktg"],
     "name": "Letreros Sintra",
     "description": "Letreros en material Sintra, ligeros y resistentes, ideales para interiores y exteriores. Cotiza junto con el diseño personalizado del letrero.",
     "img": "/images/servicios/herramientas/letrero-sintra.webp"
   },
   {
+    "id": "f7a5c8e3-9d4b-4f6e-a2d7-6c9f3e8b1a5d",
     "category": ["mktg"],
     "name": "Palomas Publicitarias",
     "description": "Estructuras publicitarias tipo paloma para máxima visibilidad en la vía pública. Incluimos servicio de entrega e instalación a domicilio.",
     "img": "/images/servicios/herramientas/paloma-publicitaria.webp"
   },
   {
+    "id": "a9d6e2c7-5b8f-4e3a-c1d4-9f7e6b2a8c5d",
     "category": ["dsgn"],
     "name": "Creación de Logo",
     "description": "Diseño profesional de logotipo único para tu marca o negocio. Descuento especial al hacer un letrero o material publicitario con el logo creado.",
     "img": "/images/servicios/diseno/logo.webp"
   },
   {
+    "id": "b5c8f3a9-7d4e-4b6c-a8d2-6f9e3c7b1a5d",
     "category": ["dsgn", "mktg"],
     "name": "Letreros",
     "description": "Diseño completo para letreros de negocios y publicidad. Ofrecemos packs especiales que incluyen diseño + confección + instalación del letrero.",
     "img": "/images/servicios/diseno/letreros.webp"
   },
   {
+    "id": "c3e7a9d5-4b8f-4c2e-d6a3-9f1e7b5c8a4d",
     "category": ["dsgn"],
     "name": "Certificados",
     "description": "Diseño profesional de certificados y diplomas personalizados. Promoción especial: diseño de certificado + impresión del certificado en combo.",
     "img": "/images/servicios/herramientas/diploma.webp"
   },
   {
-    "category": ["dsgn", "mktg"],
-    "name": "Tarjetas de Presentación",
-    "description": "Diseño profesional de tarjetas de presentación a una o dos caras. También nos encargamos de la impresión con acabados de calidad.",
-    "img": "/images/servicios/herramientas/tarjeta.webp"
-  },
-  {
-    "category": ["dsgn", "mktg"],
-    "name": "Flyers",
-    "description": "Diseño creativo y llamativo de volantes publicitarios. Aprovecha la promoción especial: diseño + impresión de flyers en un solo paquete.",
-    "img": "/images/servicios/herramientas/flyer.webp"
-  },
-  {
+    "id": "d7f2b9a6-5c8e-4d3f-a9b7-6e4c2f8a1b5d",
     "category": ["dsgn", "mktg"],
     "name": "Afiches",
     "description": "Diseño de afiches, banners y material promocional de impacto. Creamos piezas visuales que captan la atención de tu público objetivo.",
     "img": "/images/servicios/diseno/afiches.webp"
   },
   {
+    "id": "e6a4c9b8-7d5f-4e2a-b3c6-9f8e1a7d4b2c",
     "category": ["misc"],
     "name": "Anillado",
     "description": "Servicio de encuadernación con anillado de documentos, tesis, manuales y libros. Promoción especial: impresión de libro + anillado en combo.",
     "img": "/images/servicios/otros/anillado.webp"
   },
   {
-    "category": ["docs", "misc"],
-    "name": "Scanner",
-    "description": "Servicio de digitalización de documentos, fotos y archivos con escaneo de alta calidad. Descuentos especiales desde las 20 unidades.",
-    "img": "/images/servicios/otros/scanner.webp"
-  },
-  {
+    "id": "f2d7e9a5-6b8c-4f3e-c7a4-8e9b2f6d1a5c",
     "category": ["misc"],
     "name": "Trámites en línea",
     "description": "Te ayudamos con gestiones en línea: certificados digitales, postulación a beneficios estatales, pagos online y más trámites administrativos.",
     "img": "/images/servicios/otros/tramites.webp"
   },
   {
+    "id": "a8c3f6b9-5d7e-4a2f-b9c4-7e6f1a8d3b5c",
     "category": ["misc"],
     "name": "Redacción de Documentos",
     "description": "Servicio profesional de redacción y elaboración de documentos: currículum vitae, cartas, cotizaciones, informes y más documentos oficiales.",
     "img": "/images/servicios/otros/redaccion.webp"
   },
   {
+    "id": "b4e9d7c6-8a5f-4b3e-c2d9-6f7e3a8b1c5d",
     "category": ["misc", "mktg"],
     "name": "Código QR",
     "description": "Creación de códigos QR personalizados para menús digitales, redes sociales, links de contacto, páginas web y mucho más.",
     "img": "/images/servicios/otros/qr.webp"
   },
   {
+    "id": "c7f2a9e5-6d8b-4c3f-a5d7-9e6b4f2a8c1d",
     "category": ["misc"],
     "name": "Mantenimiento de Impresoras",
     "description": "Servicio técnico completo de mantenimiento para impresoras de todas las marcas. Incluye limpieza profunda de la impresora sin costo adicional.",
