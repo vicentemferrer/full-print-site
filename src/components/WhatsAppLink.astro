@@ -1,8 +1,6 @@
 ---
-const { phoneNumber } = Astro.props;
-
-const endpoint = import.meta.env.WA_API_URL || 'https://api.whatsapp.com'
-const phone = import.meta.env.FP_PHONE || phoneNumber
+const endpoint = import.meta.env.WA_API_URL
+const phone = import.meta.env.FP_PHONE
 ---
 
 <div class="wpp">

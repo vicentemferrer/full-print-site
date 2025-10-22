@@ -1,7 +1,7 @@
 import type { CategoryOption, Link } from "./definitions.ts";
 
-const endpoint = import.meta.env.WA_API_URL || "https://api.whatsapp.com";
-const phone = import.meta.env.FP_PHONE || "56994069861";
+const endpoint = import.meta.env.WA_API_URL;
+const phone = import.meta.env.FP_PHONE;
 
 const carousel: Link[] = [
   {
