@@ -23,7 +23,9 @@ const message = `Hola! Me interesa el ${isService ? 'servicio' : 'producto'} de 
 <Layout subtitle={item.name}>
   <main>
     <section>
-      <img src={item.img} alt={item.name}>
+      <picture>
+        <img src={item.img} alt={item.name}>
+      </picture>
       <article>
         <h2>{item.name}</h2>
         <p>{item.description}</p>
@@ -32,3 +34,101 @@ const message = `Hola! Me interesa el ${isService ? 'servicio' : 'producto'} de 
     </section>
   </main>
 </Layout>
+
+<style>
+  section {
+    grid-column: 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  img {
+    width: 60vw;
+  }
+
+  article {
+    padding-block: 1rem;
+    
+    max-width: 33ch;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: .5rem;
+  }
+
+  article p {
+    font-size: larger;
+  }
+
+  article a  {
+    display: block;
+
+    margin-top: .5rem;
+
+    width: 100%;
+    align-self: center;
+  }
+
+  @media (min-width: 768px) {
+    section {
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+
+    }
+
+    picture {
+      flex-grow: 1;
+
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      width: 30vw;
+    }
+
+    article {
+      padding-inline: 2rem;
+
+      max-width: 45ch;
+
+      flex-grow: 1;
+    }
+
+    article a {
+      margin-top: 1.5rem;
+
+      width: 75%;
+      align-self: start;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    section {
+      gap: 2rem;
+    }
+
+    picture {
+      flex-grow: 0;
+    }
+
+    img {
+      width: 25vw;
+    }
+
+    article {
+      padding-inline: 1rem;
+
+      max-width: 50ch;
+
+      flex-grow: 0;
+    }
+  }
+</style>
