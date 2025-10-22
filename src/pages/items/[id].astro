@@ -12,10 +12,23 @@ export function getStaticPaths() {
 
 const { id } = Astro.params
 const { item } = Astro.props
+
+const isService = services.some((item) => item.id === id)
+
+const endpoint = import.meta.env.WA_API_URL || 'https://api.whatsapp.com'
+const phone = import.meta.env.FP_PHONE || '56994069861'
+const message = `Hola! Me interesa el ${isService ? 'servicio' : 'producto'} de ${item.name}. Quisiera consultar precios y disponibilidad.`
 ---
 
 <Layout subtitle={item.name}>
   <main>
-
+    <section>
+      <img src={item.img} alt={item.name}>
+      <article>
+        <h2>{item.name}</h2>
+        <p>{item.description}</p>
+        <a href={`${endpoint}/send?phone=${phone}&text=${message}`} target='_blank' class="action base">Cotizar por WhatsApp</a>
+      </article>
+    </section>
   </main>
 </Layout>

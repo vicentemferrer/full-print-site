@@ -1,5 +1,8 @@
 import type { CategoryOption, Link } from "./definitions.ts";
 
+const endpoint = import.meta.env.WA_API_URL || "https://api.whatsapp.com";
+const phone = import.meta.env.FP_PHONE || "56994069861";
+
 const carousel: Link[] = [
   {
     icon: "document",
@@ -105,7 +108,7 @@ const social: Link[] = [
       variant: "brands",
       suffix: "whatsapp",
     },
-    url: "https://wa.me/56994069861",
+    url: `${endpoint}/send?phone=${phone}`,
   },
 ];
 
