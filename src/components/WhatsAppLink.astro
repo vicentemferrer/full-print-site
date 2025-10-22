@@ -1,9 +1,10 @@
 ---
-const { phone } = Astro.props;
+const endpoint = import.meta.env.WA_API_URL
+const phone = import.meta.env.FP_PHONE
 ---
 
 <div class="wpp">
-  <a href={`https://wa.me/${phone}`} target="_blank">
+  <a href={`${endpoint}/send?phone=${phone}`} target="_blank" title="¿Necesitas ayuda?">
     <i class=`fi fi-brands-whatsapp` />
   </a>
 </div>

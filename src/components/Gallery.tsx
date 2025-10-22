@@ -44,10 +44,12 @@ export default function Gallery() {
   return (
     <ul className="gallery">
       {stableItems.length > 0 &&
-        stableItems.map(({ name, img }, i) => (
+        stableItems.map(({ id, name, img }, i) => (
           <li key={i}>
             <img src={img} alt={`${name} image`} loading="lazy" />
-            <h4>{name}</h4>
+            <a href={`/items/${id}`}>
+              <h4>{name}</h4>
+            </a>
           </li>
         ))}
       {/* {stableItems.length === 0 &&} */}

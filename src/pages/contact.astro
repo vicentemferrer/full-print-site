@@ -1,6 +1,9 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import ContactForm from '@components/ContactForm.astro';
+
+const endpoint = import.meta.env.WA_API_URL
+const phone = import.meta.env.FP_PHONE
 ---
 
 <Layout subtitle='Contáctanos'>
@@ -22,7 +25,7 @@ import ContactForm from '@components/ContactForm.astro';
           referrerpolicy='no-referrer-when-downgrade'></iframe>
         <hr />
         <p>Si necesita solicitar nuestro servicio de forma inmediata puede</p>
-        <a href='https://wa.me/56994069861' target='_blank' class='action secondary'
+        <a href={`${endpoint}/send?phone=${phone}`} target='_blank' class='action secondary'
           ><i class='fi fi-brands-whatsapp'></i>Contactarnos por WhatsApp</a
         >
       </div>

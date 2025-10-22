@@ -1,0 +1,134 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+import type { Offering } from "@lib/definitions";
+
+import services from "../../../public/json/servicios.json"
+import products from "../../../public/json/productos.json"
+
+export function getStaticPaths() {
+  return [...services, ...products].map((item: Offering) => ({ params: { id: item.id }, props: { item } }))
+};
+
+const { id } = Astro.params
+const { item } = Astro.props
+
+const isService = services.some((item) => item.id === id)
+
+const endpoint = import.meta.env.WA_API_URL
+const phone = import.meta.env.FP_PHONE
+const message = `Hola! Me interesa el ${isService ? 'servicio' : 'producto'} de ${item.name}. Quisiera consultar precios y disponibilidad.`
+---
+
+<Layout subtitle={item.name}>
+  <main>
+    <section>
+      <picture>
+        <img src={item.img} alt={item.name}>
+      </picture>
+      <article>
+        <h2>{item.name}</h2>
+        <p>{item.description}</p>
+        <a href={`${endpoint}/send?phone=${phone}&text=${message}`} target='_blank' class="action base">Cotizar por WhatsApp</a>
+      </article>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  section {
+    grid-column: 2 / 3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  img {
+    width: 60vw;
+  }
+
+  article {
+    padding-block: 1rem;
+    
+    max-width: 33ch;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: .5rem;
+  }
+
+  article p {
+    font-size: larger;
+  }
+
+  article a  {
+    display: block;
+
+    margin-top: .5rem;
+
+    width: 100%;
+    align-self: center;
+  }
+
+  @media (min-width: 768px) {
+    section {
+      flex-direction: row;
+      justify-content: center;
+      align-items: start;
+
+    }
+
+    picture {
+      flex-grow: 1;
+
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      width: 30vw;
+    }
+
+    article {
+      padding-inline: 2rem;
+
+      max-width: 45ch;
+
+      flex-grow: 1;
+    }
+
+    article a {
+      margin-top: 1.5rem;
+
+      width: 75%;
+      align-self: start;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    section {
+      gap: 2rem;
+    }
+
+    picture {
+      flex-grow: 0;
+    }
+
+    img {
+      width: 25vw;
+    }
+
+    article {
+      padding-inline: 1rem;
+
+      max-width: 50ch;
+
+      flex-grow: 0;
+    }
+  }
+</style>
