@@ -34,3 +34,25 @@ export function getParams(param: string) {
 
   return urlParams.get(param);
 }
+
+export function extractPhotoUUID(photoName: string): string {
+  if (!photoName || typeof photoName !== "string") {
+    throw new Error("Invalid photo name: must be a non-empty string");
+  }
+
+  const parts = photoName.split("/");
+
+  if (parts.length !== 4 || parts[0] !== "places" || parts[2] !== "photos") {
+    throw new Error(
+      `Invalid photo name format: expected "places/{place_id}/photos/{photo_id}", got "${photoName}"`,
+    );
+  }
+
+  const uuid = parts[3];
+
+  if (!uuid) {
+    throw new Error("Photo UUID not found in name");
+  }
+
+  return uuid;
+}

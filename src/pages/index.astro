@@ -2,6 +2,7 @@
 import Layout from '@layouts/Layout.astro';
 import Hero from '@components/Hero.astro';
 import ServiceCarousel from '@components/CarouselComponents/ServiceCarousel.tsx';
+import Collage from '@components/Collage';
 
 import { carousel as carouselLinks } from '@lib/data.ts';
 ---
@@ -11,7 +12,13 @@ import { carousel as carouselLinks } from '@lib/data.ts';
     <Hero />
 
     <ServiceCarousel anchors={carouselLinks} client:visible />
+
+    <Collage client:load />
   </main>
 </Layout>
 
-<style></style>
+<style is:global>
+  section {
+    grid-column: 2 / 3;
+  }
+</style>

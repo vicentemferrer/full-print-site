@@ -60,6 +60,19 @@ export interface Filters {
   query: string;
 }
 
+export interface Photo {
+  name: string;
+  widthPx: number;
+  heightPx: number;
+  authorAttributions: Array<{
+    displayName: string;
+    uri: string;
+    photoUri: string;
+  }>;
+  flagContentUri: string;
+  googleMapsUri: string;
+}
+
 type Icon = {
   variant: string;
   suffix: string;
