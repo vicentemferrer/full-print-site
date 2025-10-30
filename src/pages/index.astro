@@ -12,12 +12,14 @@ import { carousel as carouselLinks } from '@lib/data.ts';
     <Hero />
 
     <ServiceCarousel anchors={carouselLinks} client:visible />
-
-    <Collage client:load />
+    <section>
+      <h2>Nuestros trabajos</h2>
+      <Collage client:visible />
+    </section>
   </main>
 </Layout>
 
-<style is:global>
+<style>
   section {
     grid-column: 2 / 3;
   }
