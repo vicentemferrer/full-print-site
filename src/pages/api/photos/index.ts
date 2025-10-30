@@ -1,6 +1,20 @@
 import type { APIRoute } from "astro";
 
-export const GET: APIRoute = async () => {
+import { ALLOWED_REFERERS } from "@lib/APISets";
+
+export const GET: APIRoute = async ({ request }) => {
+  const referer = request.headers.get("referer");
+
+  if (
+    !referer ||
+    !ALLOWED_REFERERS.some((allowed) => referer.startsWith(allowed))
+  ) {
+    return new Response(JSON.stringify({ error: "Forbidden" }), {
+      status: 403,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
   const id = import.meta.env.PLACE_ID;
   const apiURL = import.meta.env.PLACES_API_URL;
   const apiKey = import.meta.env.MAPS_API_KEY;

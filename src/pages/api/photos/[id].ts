@@ -1,6 +1,20 @@
 import type { APIRoute } from "astro";
 
+import { ALLOWED_REFERERS } from "@lib/APISets";
+
 export const GET: APIRoute = async ({ params, request }) => {
+  const referer = request.headers.get("referer");
+
+  if (
+    !referer ||
+    !ALLOWED_REFERERS.some((allowed) => referer.startsWith(allowed))
+  ) {
+    return new Response(JSON.stringify({ error: "Forbidden" }), {
+      status: 403,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
   const { id: photoID } = params;
   const url = new URL(request.url);
   const maxWidth = url.searchParams.get("maxWidth") || "400";
