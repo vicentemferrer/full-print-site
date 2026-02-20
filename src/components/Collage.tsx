@@ -1,22 +1,26 @@
-import { extractPhotoUUID } from "@lib/utils";
+// import { extractPhotoUUID } from "@lib/utils";
 
-import { useCollage } from "@hooks/useCollage";
+// import { useCollage } from "@hooks/useCollage";
 
 import "./Collage.css";
 
-export default function Collage() {
-  const { images } = useCollage();
+type Props = {
+  images: string[];
+};
+
+export default function Collage({ images }: Props) {
+  // const { images } = useCollage();
 
   return (
     <article className="collage">
-      {images.map((image) => {
-        const photoID = extractPhotoUUID(image.name);
+      {images.map((image, i) => {
+        // const photoID = extractPhotoUUID(image.name);
 
         return (
-          <div key={photoID} className="collage-item">
+          <div key={i} className="collage-item">
             <img
-              src={`/api/photos/${photoID}?maxWidth=800`}
-              alt={image.authorAttributions[0]?.displayName || "Place photo"}
+              src={`/images/collage/${image}.webp`}
+              alt="FULL PRINT"
               loading="lazy"
             />
           </div>

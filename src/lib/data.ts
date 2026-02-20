@@ -139,4 +139,24 @@ const categoryOptions: CategoryOption[] = [
   },
 ];
 
-export { carousel, footer, support, contact, social, categoryOptions };
+const collagePicts = [
+  "pict_1",
+  "pict_2",
+  "pict_3",
+  "pict_4",
+  "pict_5",
+  "pict_6",
+  "pict_7",
+  "pict_8",
+  "pict_9",
+];
+
+export {
+  carousel,
+  footer,
+  support,
+  contact,
+  social,
+  categoryOptions,
+  collagePicts,
+};

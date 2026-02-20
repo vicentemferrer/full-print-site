@@ -4,7 +4,7 @@ import Hero from '@components/Hero.astro';
 import ServiceCarousel from '@components/CarouselComponents/ServiceCarousel.tsx';
 import Collage from '@components/Collage';
 
-import { carousel as carouselLinks } from '@lib/data.ts';
+import { carousel as carouselLinks, collagePicts } from '@lib/data.ts';
 ---
 
 <Layout subtitle='Inicio'>
@@ -14,7 +14,7 @@ import { carousel as carouselLinks } from '@lib/data.ts';
     <ServiceCarousel anchors={carouselLinks} client:visible />
     <section>
       <h2>Nuestros trabajos</h2>
-      <Collage client:visible />
+      <Collage images={collagePicts} client:visible />
     </section>
   </main>
 </Layout>
