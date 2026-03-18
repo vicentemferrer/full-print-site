@@ -136,85 +136,48 @@
 
     border: 2px solid transparent;
     border-radius: 5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
 
     color: var(--link-color);
 
-    &:hover {
-      color: var(--button-hover-color);
-    }
-
     &.premium {
-      color: var(--button-hover-color);
-
-      background:
-        linear-gradient(var(--dark-gradient1-color), var(--dark-gradient2-color)) text,
-        radial-gradient(
-            circle at left,
-            var(--premium-gradient1-color) 17%,
-            var(--premium-gradient2-color) 60%,
-            var(--premium-gradient3-color) 90%
-          )
-          padding-box;
+      background-color: var(--accent2-main-color);
+      color: var(--dark-primary-color);
+      border-color: var(--accent2-main-color);
+      font-weight: 600;
 
       &:hover {
-        background:
-          radial-gradient(
-              circle at left,
-              var(--premium-gradient1-color) 17%,
-              var(--premium-gradient2-color) 60%,
-              var(--premium-gradient3-color) 90%
-            )
-            text,
-          linear-gradient(var(--dark-gradient1-color), var(--dark-gradient2-color)) padding-box,
-          radial-gradient(
-              circle at left,
-              var(--premium-gradient1-color) 17%,
-              var(--premium-gradient2-color) 60%,
-              var(--premium-gradient3-color) 90%
-            )
-            border-box;
+        background-color: var(--accent2-light-color);
+        border-color: var(--accent2-light-color);
+        box-shadow: 0 4px 14px 0 rgba(234, 179, 8, 0.39);
+        transform: translateY(-2px);
       }
     }
 
     &.base {
-      background: radial-gradient(
-          circle at left,
-          var(--base-gradient1-color) 17%,
-          var(--base-gradient2-color) 60%,
-          var(--base-gradient3-color) 90%
-        )
-        padding-box;
+      background-color: var(--accent1-main-color);
+      color: white;
+      border-color: var(--accent1-main-color);
 
       &:hover {
-        background:
-          radial-gradient(
-              circle at left,
-              var(--base-gradient1-color) 17%,
-              var(--base-gradient2-color) 60%,
-              var(--base-gradient3-color) 90%
-            )
-            text,
-          linear-gradient(var(--dark-gradient1-color), var(--dark-gradient2-color)) padding-box,
-          radial-gradient(
-              circle at left,
-              var(--base-gradient1-color) 17%,
-              var(--base-gradient2-color) 60%,
-              var(--base-gradient3-color) 90%
-            )
-            border-box;
+        background-color: var(--accent1-light-color);
+        border-color: var(--accent1-light-color);
+        box-shadow: 0 4px 14px 0 rgba(236, 72, 153, 0.39);
+        transform: translateY(-2px);
       }
     }
 
     &.secondary {
-      background:
-        linear-gradient(var(--dark-gradient1-color), var(--dark-gradient2-color)) padding-box,
-        linear-gradient(var(--secondary-gradient1-color), var(--secondary-gradient2-color)) border-box;
+      background-color: transparent;
+      color: var(--accent3-main-color);
+      border-color: var(--accent3-main-color);
 
       &:hover {
-        background:
-          linear-gradient(var(--secondary-gradient1-color), var(--secondary-gradient2-color)) text,
-          linear-gradient(var(--dark-gradient1-color), var(--dark-gradient2-color)) padding-box,
-          linear-gradient(var(--secondary-gradient1-color), var(--secondary-gradient2-color)) border-box;
+        background-color: var(--accent3-main-color);
+        color: white;
+        box-shadow: 0 4px 14px 0 rgba(14, 165, 233, 0.39);
+        transform: translateY(-2px);
       }
     }
 
