@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// SSR por defecto
+let error = "";
+
+if (Astro.request.method === "POST") {
+  try {
+    const data = await Astro.request.formData();
+    const username = data.get("username");
+    const password = data.get("password");
+
+    // Lógica básica de autenticación
+    if (username === "admin" && password === "admin") {
+      Astro.cookies.set("admin_session", "true", { path: "/" });
+      return Astro.redirect("/admin");
+    } else {
+      error = "Usuario o contraseña incorrectos.";
+    }
+  } catch (e) {
+    if (e instanceof Error) {
+      error = e.message;
+    }
+  }
+}
+---
+
+<Layout title="Login Administrador">
+  <main>
+    <h1>Login de Administrador</h1>
+    {error && <p style="color: red;">{error}</p>}
+    <form method="POST">
+      <div>
+        <label>Usuario: <input type="text" name="username" required /></label>
+      </div>
+      <div>
+        <label>Contraseña: <input type="password" name="password" required /></label>
+      </div>
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+</Layout>

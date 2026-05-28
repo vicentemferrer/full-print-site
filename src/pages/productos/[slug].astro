@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const { slug } = Astro.params;
+---
+
+<Layout title={`Producto - ${slug}`}>
+  <main>
+    <h1>Producto: {slug}</h1>
+  </main>
+</Layout>

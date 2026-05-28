@@ -11,12 +11,16 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
+    "@astrojs/node": "^9.1.1",
     "@astrojs/react": "^4.3.1",
+    "@fontsource/montserrat": "^5.2.8",
     "@nanostores/react": "^1.0.0",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "astro": "^5.13.10",
+    "astro-icon": "^1.1.5",
     "nanostores": "^1.0.1",
+    "pg": "^8.21.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "typescript": "^5.9.2"
@@ -25,6 +29,7 @@
     "@types/babel__traverse": "^7.20.7",
     "@types/estree": "^1.0.7",
     "@types/ms": "^2.1.0",
+    "@types/pg": "^8.20.0",
     "prettier": "3.6.2",
     "prettier-plugin-astro": "0.14.1"
   }

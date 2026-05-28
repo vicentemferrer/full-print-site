@@ -1,0 +1,15 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+
+const { id } = Astro.params;
+---
+
+<Layout title={`Editar Producto ${id}`}>
+  <main>
+    <h1>Editar Producto: {id}</h1>
+    <form>
+      {/* Campos de edición de producto */}
+      <button type="submit">Actualizar</button>
+    </form>
+  </main>
+</Layout>
