@@ -1,0 +1,281 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.productSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.productImageContainer {
+  position: relative;
+  background: #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #101820;
+  margin-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+
+.colorBar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  height: 3px;
+  width: 120px;
+}
+
+.colorBarSegment {
+  flex: 1;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.colorBar .cyan {
+  background-color: #00A4EF;
+}
+
+.colorBar .magenta {
+  background-color: #F41477;
+}
+
+.colorBar .yellow {
+  background-color: #FFD400;
+}
+
+.colorBar .black {
+  background-color: #101820;
+}
+
+.formContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #101820;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.975rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #101820;
+}
+
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 0.975rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+  outline: none;
+  border-color: #00A4EF;
+  box-shadow: 0 0 0 3px rgba(0, 164, 239, 0.1);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.radioLabel input[type="radio"] {
+  cursor: pointer;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.975rem;
+}
+
+.buttonPrimary {
+  background-color: #FFD400;
+  color: #101820;
+}
+
+.buttonPrimary:hover {
+  background-color: #FFCE00;
+  transform: translateY(-2px);
+}
+
+.buttonSecondary {
+  background-color: #f0f0f0;
+  color: #101820;
+  border: 2px solid #d0d0d0;
+}
+
+.buttonSecondary:hover {
+  background-color: #e8e8e8;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.featureCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.featureIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.featureTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #101820;
+}
+
+.featureDescription {
+  font-size: 0.875rem;
+  color: #4a5568;
+  line-height: 1.5;
+}
+
+.tabs {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 1rem 0;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  color: #4a5568;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  color: #101820;
+  border-bottom-color: #00A4EF;
+}
+
+.tab:hover {
+  color: #101820;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .productSection {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .formContainer {
+    padding: 1.5rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+  }
+
+  .tabs {
+    gap: 1rem;
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,225 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: #101820;
+  font-family: 'Manrope', sans-serif;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+}
+
+.colorBar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  height: 4px;
+}
+
+.colorBarSegment {
+  flex: 1;
+  max-width: 80px;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.colorBar .cyan {
+  background-color: #00A4EF;
+}
+
+.colorBar .magenta {
+  background-color: #F41477;
+}
+
+.colorBar .yellow {
+  background-color: #FFD400;
+}
+
+.colorBar .black {
+  background-color: #101820;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.productCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: #f0f0f0;
+}
+
+.productContent {
+  padding: 1.5rem;
+}
+
+.productTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #101820;
+}
+
+.productPrice {
+  font-size: 0.975rem;
+  color: #F41477;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.productButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #101820;
+  background: white;
+  border-radius: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #101820;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.productButton:hover {
+  background: #101820;
+  color: white;
+}
+
+.sidebar {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  position: sticky;
+  top: 100px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.sidebarTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #101820;
+}
+
+.sidebarSubtitle {
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.ctaButton {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.975rem;
+}
+
+.ctaButtonPrimary {
+  background-color: #FFD400;
+  color: #101820;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.ctaButtonPrimary:hover {
+  background-color: #FFCE00;
+  transform: translateY(-2px);
+}
+
+.ctaButtonSecondary {
+  background-color: white;
+  color: #101820;
+  border: 2px solid #101820;
+}
+
+.ctaButtonSecondary:hover {
+  background-color: #f8f8f8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .productsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  .sidebar {
+    position: static;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .productsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .productCard {
+    border-radius: 8px;
+  }
+
+  .productImage {
+    height: 140px;
+  }
+
+  .productContent {
+    padding: 1rem;
+  }
+}

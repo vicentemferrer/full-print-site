@@ -1,0 +1,587 @@
+.footer {
+  background-color: #FFFFFF;
+  padding: 56px 20px;
+  position: relative;
+}
+
+/* Feature Cards Section */
+.featuresSection {
+  max-width: 1180px;
+  margin: 0 auto 56px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.featureCard {
+  background: #FFFFFF;
+  border: 1px solid #E6E8EC;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.featureCardBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  border-radius: 16px 16px 0 0;
+}
+
+.borderMagenta {
+  background-color: #F4147E;
+}
+
+.borderCyan {
+  background-color: #00AEEF;
+}
+
+.borderYellow {
+  background-color: #FFD400;
+}
+
+.featureIcon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+.featureContent {
+  margin-bottom: 16px;
+}
+
+.featureTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #050708;
+  margin-bottom: 8px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.featureText {
+  font-size: 14px;
+  color: #5F666D;
+  line-height: 1.5;
+}
+
+/* Payment Methods */
+.paymentMethods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0;
+  padding: 12px 0;
+  border-top: 1px solid #E6E8EC;
+  border-bottom: 1px solid #E6E8EC;
+}
+
+.paymentMethod {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.paymentLogo {
+  font-weight: 600;
+  color: #050708;
+}
+
+.bankIcon {
+  font-size: 20px;
+}
+
+.paymentText {
+  font-size: 12px;
+  color: #5F666D;
+  line-height: 1.3;
+}
+
+.securityNote {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #5F666D;
+  margin-top: 12px;
+}
+
+/* Store Info */
+.storeInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoItem {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background-color: #F7F8FA;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.infoItem svg {
+  flex-shrink: 0;
+  color: #00AEEF;
+  width: 16px;
+  height: 16px;
+}
+
+.infoLabel {
+  font-weight: 600;
+  color: #050708;
+  margin-bottom: 4px;
+  font-size: 13px;
+}
+
+.infoText {
+  color: #5F666D;
+  line-height: 1.4;
+  font-size: 12px;
+}
+
+/* Google Reviews */
+.googleReview {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #E6E8EC;
+}
+
+.googleLogo {
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #4285F4 0%, #EA4335 25%, #FBBC04 50%, #34A853 75%, #4285F4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.ratingInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.rating {
+  font-weight: 700;
+  font-size: 14px;
+  color: #050708;
+}
+
+.stars {
+  color: #FFD400;
+  font-size: 14px;
+}
+
+.reviewCount {
+  font-size: 12px;
+  color: #5F666D;
+  margin-bottom: 8px;
+}
+
+.reviewLink {
+  color: #00AEEF;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.reviewLink:hover {
+  color: #0095D1;
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.socialIcon:nth-child(1) {
+  background-color: #E4405F;
+}
+
+.socialIcon:nth-child(2) {
+  background-color: #1877F2;
+}
+
+.socialIcon:nth-child(3) {
+  background-color: #25D366;
+}
+
+.socialIcon:hover {
+  transform: translateY(-2px);
+}
+
+.whatsappButton {
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+.whatsappButton:hover {
+  background-color: #FFFFFF;
+  border-color: #00AEEF;
+}
+
+/* Newsletter Section */
+.newsletterSection {
+  max-width: 1180px;
+  margin: 0 auto 56px;
+  padding: 32px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid #E6E8EC;
+}
+
+.newsletterContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  position: relative;
+}
+
+.newsletterInfo {
+  flex: 1;
+}
+
+.logoWithDescription {
+  display: flex;
+  gap: 16px;
+}
+
+.logoCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #F4147E 0%, #FFD400 50%, #00AEEF 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.newsletterTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: #050708;
+  margin-bottom: 8px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.newsletterSubtitle {
+  font-size: 14px;
+  color: #5F666D;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.emailInput {
+  padding: 12px 16px;
+  border: 1px solid #E6E8EC;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: #050708;
+  background-color: #F7F8FA;
+  transition: border-color 0.3s ease;
+}
+
+.emailInput::placeholder {
+  color: #5F666D;
+}
+
+.emailInput:focus {
+  outline: none;
+  border-color: #00AEEF;
+  background-color: #FFFFFF;
+}
+
+.subscribeButton {
+  padding: 12px 24px;
+  background-color: #101820;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Manrope', sans-serif;
+}
+
+.subscribeButton:hover {
+  background-color: #050708;
+}
+
+.newsletterGraphic {
+  font-size: 80px;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+/* Links Section */
+.linksSection {
+  max-width: 1180px;
+  margin: 0 auto 32px;
+  padding-top: 32px;
+  border-top: 1px solid #E6E8EC;
+}
+
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.linkColumn {
+  position: relative;
+}
+
+.footerLogo {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+
+.companyName {
+  font-size: 16px;
+  font-weight: 700;
+  color: #050708;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+.companySubtitle {
+  font-size: 12px;
+  color: #5F666D;
+  margin: 0;
+}
+
+.companyDescription {
+  font-size: 13px;
+  color: #5F666D;
+  line-height: 1.6;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.heartIcon {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.linksTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #050708;
+  margin-bottom: 16px;
+  font-family: 'Manrope', sans-serif;
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  color: #050708;
+  text-decoration: none;
+  font-size: 13px;
+  border-bottom: 1px solid #E6E8EC;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #F4147E;
+}
+
+.link span:last-child {
+  color: #5F666D;
+}
+
+.helpBox {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  background-color: #F7F8FA;
+  border-radius: 8px;
+  align-items: flex-start;
+}
+
+.helpBox svg {
+  color: #25D366;
+  flex-shrink: 0;
+}
+
+.helpTitle {
+  font-weight: 600;
+  color: #050708;
+  margin: 0 0 4px 0;
+  font-size: 14px;
+}
+
+.helpText {
+  color: #5F666D;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Copyright Section */
+.copyrightSection {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 32px;
+  border-top: 1px solid #E6E8EC;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #5F666D;
+  margin: 0 0 8px 0;
+}
+
+.designCredit {
+  font-size: 12px;
+  color: #5F666D;
+  margin: 0;
+}
+
+.heart {
+  color: #F4147E;
+  margin: 0 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 32px 16px;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .newsletterContent {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .newsletterForm {
+    order: 2;
+  }
+
+  .newsletterGraphic {
+    display: none;
+  }
+
+  .linksGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .paymentMethods {
+    grid-template-columns: 1fr;
+  }
+
+  .storeInfo {
+    gap: 8px;
+  }
+
+  .infoItem {
+    padding: 8px;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+
+  .featureCard {
+    padding: 16px;
+  }
+
+  .floatingWhatsapp {
+    width: 48px;
+    height: 48px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 24px 12px;
+  }
+
+  .featuresSection {
+    margin-bottom: 32px;
+  }
+
+  .newsletterSection {
+    padding: 16px;
+    margin-bottom: 32px;
+  }
+
+  .logoCircle {
+    width: 56px;
+    height: 56px;
+    font-size: 16px;
+  }
+
+  .featureTitle {
+    font-size: 16px;
+  }
+
+  .newsletterTitle {
+    font-size: 16px;
+  }
+
+  .linksTitle {
+    font-size: 14px;
+  }
+
+  .link {
+    padding: 8px 0;
+    font-size: 12px;
+  }
+}
